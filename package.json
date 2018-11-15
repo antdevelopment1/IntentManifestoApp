@@ -1,0 +1,26 @@
+{
+  "name": "bulletjournalapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-pg-simple": "^5.0.0",
+    "dotenv": "^6.1.0",
+    "pg-promise": "^8.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antdevelopment1/bulletJournalApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antdevelopment1/bulletJournalApp/issues"
+  },
+  "homepage": "https://github.com/antdevelopment1/bulletJournalApp#readme"
+}
