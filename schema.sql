@@ -12,7 +12,7 @@ CREATE TABLE users (
 CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
     title TEXT,
-    entry TEXT,
     date TIMESTAMP,
+    entry TEXT,
     user_id INTEGER REFERENCES users (id) ON DELETE CASCADE
 );
