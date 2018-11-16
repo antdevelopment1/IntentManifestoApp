@@ -20,8 +20,8 @@ const User = require('./models/users');
 // =======================
 
 // Get all users
-// User.getAll()
-//     .then( all => { console.log(all); })
+User.getAll()
+    .then( all => { console.log(all); })
 
 // Gets user by id
 // User.getById(5)
@@ -49,16 +49,23 @@ const User = require('./models/users');
 //     })
 
 // Updates password
-User.getByUsername('lilylove')
-    .then(newpwhash => {
-            newpwhash.updatePassword('$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.Jl')
-            .then(rowCount => {
-                console.log(rowCount);
-            })
-    })
+// User.getByUsername('lilylove')
+//     .then(newpwhash => {
+//             newpwhash.updatePassword('$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.Jl')
+//             .then(rowCount => {
+//                 console.log(rowCount);
+//             })
+//     })
 
+// =======================
+//        Delete
+// =======================
 
-
+// Deletes user
+// User.deletebyId(17)
+//     .then(deleted => {
+//         console.log(deleted);
+//     })
 
 
 
