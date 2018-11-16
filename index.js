@@ -11,7 +11,15 @@ const User = require('./models/users');
 
 // Gets user by id
 User.getById(5)
+    .then(userid => {
+        console.log(userid);
+    })
 
+// Gets user by username
+User.getByUsername('lilylove')
+    .then(username => {
+        console.log(username);
+    })
     
 
 
