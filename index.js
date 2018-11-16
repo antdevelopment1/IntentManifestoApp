@@ -20,8 +20,8 @@ const User = require('./models/users');
 // =======================
 
 // Get all users
-User.getAll()
-    .then( all => { console.log(all); })
+// User.getAll()
+//     .then( all => { console.log(all); })
 
 // Gets user by id
 // User.getById(5)
@@ -62,10 +62,15 @@ User.getAll()
 // =======================
 
 // Deletes user
-// User.deletebyId(17)
+// User.deleteById(17)
 //     .then(deleted => {
 //         console.log(deleted);
 //     })
+
+User.deleteByUsername('cokees')
+    .then(rowCount => {
+        console.log(rowCount);
+    })
 
 
 
