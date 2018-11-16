@@ -39,14 +39,24 @@ const User = require('./models/users');
 //        Update
 // =======================
 
-// Updates user
-User.getByUsername('pancakes')
-    .then(newUserName => {
-        newUserName.updateUserName('lilylove')
+// Updates user username
+// User.getByUsername('pancakes')
+//     .then(newUserName => {
+//         newUserName.updateUserName('lilylove')
+//             .then(rowCount => {
+//                 console.log(rowCount);
+//             })
+//     })
+
+// Updates password
+User.getByUsername('lilylove')
+    .then(newpwhash => {
+            newpwhash.updatePassword('$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.Jl')
             .then(rowCount => {
                 console.log(rowCount);
             })
     })
+
 
 
 
