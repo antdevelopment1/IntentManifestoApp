@@ -47,9 +47,9 @@ class User {
             })
     }
 
- // ======================
-//      // Update
-// =======================
+    // ======================
+    //         Update
+    // ======================
     updateUserName(username){
         // this.username = username;
         return db.result(`update users set username=$2 where id=$1`,[this.id, username])
@@ -76,11 +76,21 @@ class User {
                 return result.rowCount;
             })
     }
+
+    // ======================
+    //         Delete
+    // ======================
+    static deletebyId(id) {
+        return db.one(`delete from users where id = $1`, [id]);
+    }
+
+    
+
+
 }
 
-// ======================
-//      // Delete
-// ======================
+
+
 
 module.exports = User;
 
