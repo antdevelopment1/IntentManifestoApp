@@ -80,11 +80,24 @@ class User {
     // ======================
     //         Delete
     // ======================
-    static deletebyId(id) {
+    static deleteById(id) {
         return db.one(`delete from users where id = $1`, [id]);
     }
 
-    
+    static deleteByUsername(username) {
+        return db.result(`delete from users where username = $1`,[username])
+        .then(result => {
+            console.log(result);
+            if (result.rowCount === 1) {
+                console.log('User has been deleted');
+            } else {
+                console.log('Unable to delete user');
+            }
+            return result.rowCount;
+        })
+    }
+
+
 
 
 }
