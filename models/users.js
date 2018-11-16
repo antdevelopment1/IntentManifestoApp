@@ -53,17 +53,29 @@ class User {
     updateUserName(username){
         // this.username = username;
         return db.result(`update users set username=$2 where id=$1`,[this.id, username])
-        .then(result => {
-            console.log(result);
-            if (result.rowCount === 1) {
-                console.log('Updated');
-            } else {
-                console.log('Could not update');
-            }
-            return result.rowCount;
-        })
+            .then(result => {
+                console.log(result);
+                if (result.rowCount === 1) {
+                    console.log('Updated');
+                } else {
+                    console.log('Could not update');
+                }
+                return result.rowCount;
+            })
     }
 
+    updatePassword(password) {
+        return db.result(`update users set pwhash=$2 where id=$1`, [this.id, password])
+            .then(result => {
+                console.log(result);
+                if (result.rowCount === 1) {
+                    console.log('Password Updated');
+                } else {
+                    console.log('Unable to update password');
+                }
+                return result.rowCount;
+            })
+    }
 }
 
 // ======================
