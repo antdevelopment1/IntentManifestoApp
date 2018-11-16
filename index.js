@@ -10,15 +10,20 @@ const User = require('./models/users');
 //     .then( all => { console.log(all); })
 
 // Gets user by id
-User.getById(5)
-    .then(userid => {
-        console.log(userid);
-    })
+// User.getById(5)
+//     .then(userid => {
+//         console.log(userid);
+//     })
 
 // Gets user by username
-User.getByUsername('lilylove')
-    .then(username => {
-        console.log(username);
+// User.getByUsername('lilylove')
+//     .then(username => {
+//         console.log(username);
+//     })
+
+User.createUser('Coke-Cola', 'cola', '$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
+    .then(newUser => {
+        console.log(newUser);
     })
     
 
