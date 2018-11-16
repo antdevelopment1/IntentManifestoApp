@@ -9,8 +9,23 @@ class User {
     }
 
 
+// ======================
 //     // Create
-    
+// ======================
+
+    static createUser(name, username, pwhash) {
+        return db.one(`insert into users (name, username, pwhash) values ($1, $2, $3) returning id`, [name, username, pwhash])
+            .then(id => {
+                const newUser = new User(id.id, name, username, pwhash)
+                return(newUser);
+            })
+    }
+
+
+
+// ======================
+//     // Retrieve
+// ======================
 // Gets all users from users table
     static getAll() {
         return db.any(`select * from users`);
@@ -31,16 +46,16 @@ class User {
             })
     }
 
-//     // Retrieve
-
-        
-//     // Update
-
-
-
-
-//     // Delete
 }
+
+// ======================
+//      // Update
+// ======================
+
+
+// ======================
+//      // Delete
+// ======================
 
 module.exports = User;
 
