@@ -11,6 +11,19 @@ class User {
 
 //     // Create
     
+// Gets all users from users table
+    static getAll() {
+        return db.any(`select * from users`);
+    }
+
+// Get user by id
+    static getById(id) {
+        return db.one(`select * from users where id = ${id}`)
+            .then(person => {
+                console.log(person);
+            })
+    }
+// Get user by username
 
 
 //     // Retrieve
