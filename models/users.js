@@ -20,11 +20,16 @@ class User {
     static getById(id) {
         return db.one(`select * from users where id = ${id}`)
             .then(person => {
-                console.log(person);
+                return person;
             })
     }
 // Get user by username
-
+    static getByUsername(username) {
+        return db.one(`select * from users where username ilike '%$1:raw%'`, [username])
+            .then(person => {
+                return person;
+            })
+    }
 
 //     // Retrieve
 
