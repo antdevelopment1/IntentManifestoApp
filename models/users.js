@@ -42,16 +42,29 @@ class User {
     static getByUsername(username) {
         return db.one(`select * from users where username ilike '%$1:raw%'`, [username])
             .then(person => {
-                return person;
+                    const newUserName = new User(person.id, person.name, person.username, person.pwhash);
+                    return newUserName;
             })
     }
 
-}
-
-// ======================
+ // ======================
 //      // Update
-// ======================
+// =======================
+    updateUserName(username){
+        // this.username = username;
+        return db.result(`update users set username=$2 where id=$1`,[this.id, username])
+        .then(result => {
+            console.log(result);
+            if (result.rowCount === 1) {
+                console.log('Updated');
+            } else {
+                console.log('Could not update');
+            }
+            return result.rowCount;
+        })
+    }
 
+}
 
 // ======================
 //      // Delete
