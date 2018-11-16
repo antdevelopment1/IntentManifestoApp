@@ -5,6 +5,20 @@ const User = require('./models/users');
 // // const app = express();
 
 
+// =======================
+//        Create
+// =======================
+
+// Creates new user
+// User.createUser('Coke-Cola', 'cola', '$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
+//     .then(newUser => {
+//         console.log(newUser);
+//     })
+
+// =======================
+//        Retreive
+// =======================
+
 // Get all users
 // User.getAll()
 //     .then( all => { console.log(all); })
@@ -21,25 +35,18 @@ const User = require('./models/users');
 //         console.log(username);
 //     })
 
-User.createUser('Coke-Cola', 'cola', '$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
-    .then(newUser => {
-        console.log(newUser);
+// ======================
+//        Update
+// =======================
+
+// Updates user
+User.getByUsername('pancakes')
+    .then(newUserName => {
+        newUserName.updateUserName('lilylove')
+            .then(rowCount => {
+                console.log(rowCount);
+            })
     })
-    
-
-
-// ==============================
-// Random chaining example
-// ==============================
-// User.addUser('Sam', '678')
-    // .then(santa => {
-    //     // console.log(santa);
-    //     santa.getPassword()
-    //         .then(password => {
-    //             console.log(password.phash);
-    //         })
-
-    // })
 
 
 
