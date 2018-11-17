@@ -2,8 +2,9 @@ const db = require('./db');
 
 class Entries {
 
-    constructor(id, title, date, entry) {
+    constructor(id, author, title, date, entry) {
         this.id = id;
+        this.author = author;
         this.title = title;
         this.date = date;
         this.entry = entry;
@@ -16,6 +17,13 @@ class Entries {
 
 // Create new entry
 
+static newEntry(author, title, date, entry) {
+    return db.one(`insert into entries (author, title, date, entry) values($1, $2, $3, $4) returning id`, [author, title, date, entry])
+        .then(id => {
+            const newEntry = new Entries(id.id, author, title, date, entry);   
+            return newEntry;
+        })
+}
 
 
 
@@ -30,7 +38,7 @@ static getAllEntries() {
         .then(entryObj => {
             // console.log(entryObj);
             const entryArr = entryObj.map( (entry) => {
-                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                const instance = new Entries(entry.id, entry.author, entry.title, entry.date, entry.entry);
                 return instance;
             })
             return entryArr;
@@ -54,7 +62,7 @@ static getNewerEntries() {
     return db.any(`select * from entries order by date asc`)
         .then(newest => {
            const orderedEntryArr = newest.map(entry => {
-                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                const instance = new Entries(entry.id, entry.author, entry.title, entry.date, entry.entry);
                 return instance;
             })
             return orderedEntryArr;
@@ -68,7 +76,7 @@ static getOlderEntries() {
     return db.any(`select * from entries order by date desc`)
         .then(oldest => {
            const oldestEntryArr = oldest.map(entry => {
-                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                const instance = new Entries(entry.id, entry.author, entry.title, entry.date, entry.entry);
                 return instance;
             })
             return oldestEntryArr;
@@ -79,7 +87,7 @@ static getOlderEntries() {
 static getById(id) {
     return db.one(`select * from entries where id = $1`, [id])
         .then(entry => {
-            const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+            const instance = new Entries(entry.id, entry.author, entry.title, entry.date, entry.entry);
                 return instance;
         })
 }
