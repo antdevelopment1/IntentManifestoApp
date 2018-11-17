@@ -87,18 +87,18 @@ const Entries = require('./models/entries');
 // =======================
 
 // Gets all entries
-Entries.getAllEntries()
-    .then(entries => {
-        entries.forEach(entry => {
-        console.log(entry.entry);
-    })
-})
+// Entries.getAllEntries()
+//     .then(entries => {
+//         entries.forEach(entry => {
+//             console.log(entry.entry);
+//     })
+// })
 
 // Retrieve by title
-// Entries.getByTitle('I love ice cream')
-//     .then(entry => {
-//         console.log(entry);
-//     })
+Entries.getByTitle('I love ')
+    .then(entry => {
+        console.log(entry);
+    })
 
 
 
