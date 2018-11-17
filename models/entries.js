@@ -65,7 +65,14 @@ static getNewerEntries() {
 
 // Retrieve entries from oldest to newest
 static getOlderEntries() {
-    
+    return db.any(`select * from entries order by date desc`)
+        .then(oldest => {
+           const oldestEntryArr = oldest.map(entry => {
+                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                return instance;
+            })
+            return oldestEntryArr;
+        })
 }
 
 // Retrieve by id
