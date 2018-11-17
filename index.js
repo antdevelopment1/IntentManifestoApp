@@ -6,7 +6,9 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-
+// ===============================
+// Public Folder and Body Parser
+// ===============================
 // Allows us to look inside public files without needing to import them into our html files
 app.use(express.static('public'));
 // Configure body-parser to read data sent by HTML form tags
@@ -14,8 +16,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Configure body-parser to read JSON bodies
 app.use(bodyParser.json());
 
+// ================================
+//       Views Module Imports
+// ================================
 const page = require('./views/page');
-const userList = require('./views/usersList');
+const allMembers = require('./views/usersList');
 const entriesList = require('./views/entriesList');
 // const userForm = require('./views/userForm'); ** need to add form file
 
@@ -23,11 +28,13 @@ const entriesList = require('./views/entriesList');
 app.get('/members', (req, res) => {
     User.getAll()
         .then(members => {
-            const usersUL = userList(members);
+            const usersUL = allMembers(members);
             const thePage = page(usersUL);
-            console.log(thePage);
-            res.send(thePage);
+            res.send(`${thePage}`);
         })
+})
+app.get('/welcome', (req, res) => {
+    res.send(`Hello. Welcome to your journal`)
 })
 
 app.listen(3000, () => {
