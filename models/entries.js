@@ -12,7 +12,7 @@ class Entries {
 
     
 // ======================
-//     // Create
+//     Create Entries
 // ======================
 
 // Create new entry
@@ -28,7 +28,7 @@ static newEntry(author, title, date, entry) {
 
 
 // ======================
-//     // Retrieve
+//    Retrieve Entries
 // ======================
 
 
@@ -92,9 +92,21 @@ static getById(id) {
         })
 }
 
+// Retrieve all entries by author
+static getByAuthor(author) {
+    return db.any(`select * from entries where author = $1`, [author])
+        .then(entries => {
+            const authorArr = entries.map(entry => {
+                const instance = new Entries(entry.id, entry.author, entry.title, entry.date, entry.entry);
+                return instance;
+            })
+            return authorArr;  
+        })
+}
+
 
 // ======================
-//         Update
+//     Update Entries
 // ======================
 
 // Update entry by title
@@ -126,7 +138,7 @@ updateByBody(body) {
 
 
 // ======================
-//         Delete
+//     Delete Entries
 // ======================
 
 // Delete entry by title
@@ -150,7 +162,7 @@ static deleteById(id) {
         if (result.rowCount === 1) {
             console.log('Entry has been deleted.');
         } else {
-            console.log('Entry has not been deleted.')
+            console.log('Entry has not been deleted.');
         }
         return result.rowCount;
     })
