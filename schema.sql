@@ -11,6 +11,7 @@ CREATE TABLE users (
 -- Entries Table
 CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
+    author TEXT REFERENCES users (username),
     title TEXT,
     date TIMESTAMP,
     entry TEXT,
