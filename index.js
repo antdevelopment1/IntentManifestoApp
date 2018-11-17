@@ -4,17 +4,37 @@ const Entries = require('./models/entries');
 
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+
+// ===============================
+// Public Folder and Body Parser
+// ===============================
+// Allows us to look inside public files without needing to import them into our html files
+app.use(express.static('public'));
+// Configure body-parser to read data sent by HTML form tags
+app.use(bodyParser.urlencoded({ extended: false }));
+// Configure body-parser to read JSON bodies
+app.use(bodyParser.json());
+
+// ================================
+//       Views Module Imports
+// ================================
+const page = require('./views/page');
+const allMembers = require('./views/usersList');
+const entriesList = require('./views/entriesList');
+// const userForm = require('./views/userForm'); ** need to add form file
 
 
-app.get('/', (req, res) => {
-    res.send('howdy- how are you');
-});
-
-app.get('/entries', (req, res) => {
-    Entries.getById(1)
-        .then(entry => {
-            res.send(entry);
+app.get('/members', (req, res) => {
+    User.getAll()
+        .then(members => {
+            const usersUL = allMembers(members);
+            const thePage = page(usersUL);
+            res.send(`${thePage}`);
         })
+})
+app.get('/welcome', (req, res) => {
+    res.send(`Hello. Welcome to your journal`)
 })
 
 app.listen(3000, () => {
@@ -156,10 +176,10 @@ app.listen(3000, () => {
 
 
 // Retrieve all entries by author
-Entries.getByAuthor('lilylove')
-    .then(authorEntries => {
-        console.log(authorEntries);
-    })
+// Entries.getByAuthor('lilylove')
+//     .then(authorEntries => {
+//         console.log(authorEntries);
+//     })
 
 // =======================
 //    Update Entries
