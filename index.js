@@ -141,7 +141,6 @@ const Entries = require('./models/entries');
 // =======================
 
 // Update by title
-
 // Entries.getById(1)
 //     .then(entry => {
 //         entry.updateByTitle('Bloopy')
@@ -150,10 +149,22 @@ const Entries = require('./models/entries');
 //             })
 //     })
 
-Entries.getById(1)
-.then(entry => {
-    entry.updateByBody('blooby bloob bloob bloob bloob. Bloopidy bloop blo bloooppp?')
-        .then(rowCount => {
-            console.log(`${rowCount} row has been updated`);
-        })
-})
+// Update by entry/body
+// Entries.getById(1)
+// .then(entry => {
+//     entry.updateByBody('blooby bloob bloob bloob bloob. Bloopidy bloop blo bloooppp?')
+//         .then(rowCount => {
+//             console.log(`${rowCount} row has been updated`);
+//         })
+// })
+
+
+// =======================
+//     Delete Entries
+// =======================
+
+// Delete by title
+Entries.deleteByTitle('Bloopy')
+    .then(rowCount => {
+        console.log(`${rowCount} rows have been affected`);
+    })
