@@ -102,15 +102,26 @@ const Entries = require('./models/entries');
 
 
 
-// Retrieve by date
+// Retrieve by newest date
+Entries.getNewerEntries()
+    .then(instance => {
+       instance.forEach(entry => {
+        console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
+       })
+    })
+
+// Retrieve by oldest date
+
+
 
 
 
 // Retrieve by id
-Entries.getById(2)
-    .then(entry => {
-        console.log(entry);
-    })
+// Entries.getById(2)
+//     .then(entry => {
+//         console.log(entry);
+//     })
+
 
 
 
