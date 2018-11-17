@@ -102,15 +102,26 @@ updateByTitle(title) {
     return db.result(`update entries set title=$2 where id=$1`, [this.id, title])
         .then(result => {
             if (result.rowCount === 1) {
-                console.log('User has been updated');
+                console.log('Title has been updated');
             } else {
-                console.log('User has not been updated.')
+                console.log('Title has not been updated.')
             }
             return result.rowCount;
         })
 }
 
 // Update entry body(the entry itself)
+updateByBody(body) {
+    return db.result(`update entries set entry=$2 where id=$1`, [this.id, body])
+        .then(result => {
+            if (result.rowCount === 1) {
+                console.log(`Entry has been updated`);
+            } else {
+                console.log(`Entry was not updated`);
+            }
+            return result.rowCount;
+        })
+}
 
 
 
