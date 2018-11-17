@@ -41,9 +41,6 @@ static getAllEntries() {
 // Retrieve by title
 static getByTitle(title) {
     return db.any(`select * from entries where title ilike '%$1:raw%'`, [title])
-        .then(entry => {
-            
-        })
 }
 
 
