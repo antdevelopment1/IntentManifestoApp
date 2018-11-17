@@ -30,7 +30,8 @@ static getAllEntries() {
         .then(entryObj => {
             // console.log(entryObj);
             const entryArr = entryObj.map( (entry) => {
-                return entry.entry;
+                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                return instance;
             })
             return entryArr;
         })
@@ -38,7 +39,12 @@ static getAllEntries() {
 
 
 // Retrieve by title
-
+static getByTitle(title) {
+    return db.any(`select * from entries where title ilike '%$1:raw%'`, [title])
+        .then(entry => {
+            
+        })
+}
 
 
 // Retrieve by date
