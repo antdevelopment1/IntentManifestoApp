@@ -4,16 +4,29 @@ const Entries = require('./models/entries');
 
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 
-app.get('/', (req, res) => {
-    res.send('howdy- how are you');
-});
+// Allows us to look inside public files without needing to import them into our html files
+app.use(express.static('public'));
+// Configure body-parser to read data sent by HTML form tags
+app.use(bodyParser.urlencoded({ extended: false }));
+// Configure body-parser to read JSON bodies
+app.use(bodyParser.json());
 
-app.get('/entries', (req, res) => {
-    Entries.getById(1)
-        .then(entry => {
-            res.send(entry);
+const page = require('./views/page');
+const userList = require('./views/usersList');
+const entriesList = require('./views/entriesList');
+// const userForm = require('./views/userForm'); ** need to add form file
+
+
+app.get('/members', (req, res) => {
+    User.getAll()
+        .then(members => {
+            const usersUL = userList(members);
+            const thePage = page(usersUL);
+            console.log(thePage);
+            res.send(thePage);
         })
 })
 
@@ -156,10 +169,10 @@ app.listen(3000, () => {
 
 
 // Retrieve all entries by author
-Entries.getByAuthor('lilylove')
-    .then(authorEntries => {
-        console.log(authorEntries);
-    })
+// Entries.getByAuthor('lilylove')
+//     .then(authorEntries => {
+//         console.log(authorEntries);
+//     })
 
 // =======================
 //    Update Entries
