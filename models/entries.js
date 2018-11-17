@@ -50,10 +50,23 @@ static getByDate() {
 }
 
 // Retrieve entries from newest to oldest
+static getNewerEntries() {
+    return db.any(`select * from entries order by date asc`)
+        .then(newest => {
+           const orderedEntryArr = newest.map(entry => {
+                const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                return instance;
+            })
+            return orderedEntryArr;
+        })
+
+}
 
 
 // Retrieve entries from oldest to newest
-
+static getOlderEntries() {
+    
+}
 
 // Retrieve by id
 static getById(id) {
@@ -63,7 +76,6 @@ static getById(id) {
                 return instance;
         })
 }
-
 
 
 
