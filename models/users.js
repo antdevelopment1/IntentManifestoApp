@@ -10,7 +10,7 @@ class User {
 
 
 // ======================
-//     // Create
+//      Create User
 // ======================
 
     static createUser(name, username, pwhash) {
@@ -24,7 +24,7 @@ class User {
 
 
 // ======================
-//     // Retrieve
+//     Retrieve User
 // ======================
 // Gets all users from users table
     static getAll() {
@@ -48,7 +48,7 @@ class User {
     }
 
     // ======================
-    //         Update
+    //      Update User
     // ======================
     updateUserName(username){
         // this.username = username;
@@ -78,10 +78,18 @@ class User {
     }
 
     // ======================
-    //         Delete
+    //      Delete User
     // ======================
     static deleteById(id) {
-        return db.one(`delete from users where id = $1`, [id]);
+        return db.result(`delete from users where id = $1`, [id])
+            .then(result => {
+                if (result.rowCount === 1) {
+                    console.log('This user has been deleted');
+                } else {
+                    console.log('This user has not been deleted');
+                }
+                return result.rowCount;
+            })
     }
 
     static deleteByUsername(username) {
