@@ -130,6 +130,18 @@ updateByBody(body) {
 // ======================
 
 // Delete entry by title
+static deleteByTitle(title) {
+    return db.result(`delete from entries where title=$1`, [title])
+    .then( result => {
+        if (result.rowCount === 1) {
+            console.log(`Entry has been deleted`);
+        } else {
+            console.log(`Entry wasnt deleted`);
+        }
+        return result.rowCount;
+    })
+
+}
 
 // Delete entry by id
 
