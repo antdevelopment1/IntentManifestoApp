@@ -80,6 +80,10 @@ const Entries = require('./models/entries');
 //     Create Entries
 // =======================
 
+// Entries.newEntry('lilylove', 'Guess What', '2018-11-16', 'I really dont have anything to say.. hehe..')
+//     .then(newEntry => {
+//         console.log(newEntry);
+//     })
 
 
 // =======================
@@ -104,25 +108,25 @@ const Entries = require('./models/entries');
 
 // Retrieve by newest date
 // Entries.getNewerEntries()
-//     .then(instance => {
-//        instance.forEach(entry => {
-//         console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
-//        })
-//     })
+    // .then(instance => {
+    //    instance.forEach(entry => {
+    //     console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
+    //    })
+    // })
 
 // Retrieve by oldest date
 // Entries.getOlderEntries()
-//     .then(instance => {
-//        instance.forEach(entry => {
-//         console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
-//        })
-//     })
+    // .then(instance => {
+    //    instance.forEach(entry => {
+    //     console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
+    //    })
+    // })
 
 // Retreive by date
-Entries.getByDate('2018-06-11','2018-09-13')
-    .then(entry => {
-        console.log(entry);
-    })
+// Entries.getByDate('2018-06-11','2018-09-13')
+//     .then(entry => {
+//         console.log(entry);
+//     })
 
 
 // Retrieve by id
