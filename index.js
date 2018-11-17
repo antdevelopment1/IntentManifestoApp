@@ -1,12 +1,13 @@
 require('dotenv').config();
 const User = require('./models/users');
+const Entries = require('./models/entries');
 
 // // const express = require('express');
 // // const app = express();
 
 
 // =======================
-//        Create
+//      Create User
 // =======================
 
 // Creates new user
@@ -15,31 +16,31 @@ const User = require('./models/users');
 //         console.log(newUser);
 //     })
 
-// =======================
-//        Retreive
-// =======================
+// // =======================
+// //     Retreive User
+// // =======================
 
-// Get all users
+// // Get all users
 // User.getAll()
 //     .then( all => { console.log(all); })
 
-// Gets user by id
+// // Gets user by id
 // User.getById(5)
 //     .then(userid => {
 //         console.log(userid);
 //     })
 
-// Gets user by username
+// // Gets user by username
 // User.getByUsername('lilylove')
 //     .then(username => {
 //         console.log(username);
 //     })
 
-// ======================
-//        Update
-// =======================
+// // ====================== 
+// //      Update User
+// // =======================
 
-// Updates user username
+// // Updates user username
 // User.getByUsername('pancakes')
 //     .then(newUserName => {
 //         newUserName.updateUserName('lilylove')
@@ -48,7 +49,7 @@ const User = require('./models/users');
 //             })
 //     })
 
-// Updates password
+// // Updates password
 // User.getByUsername('lilylove')
 //     .then(newpwhash => {
 //             newpwhash.updatePassword('$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.Jl')
@@ -57,20 +58,39 @@ const User = require('./models/users');
 //             })
 //     })
 
-// =======================
-//        Delete
-// =======================
+// // =======================
+// //      Delete User
+// // =======================
 
-// Deletes user
+// // Deletes user by id
 // User.deleteById(17)
 //     .then(deleted => {
 //         console.log(deleted);
 //     })
 
-User.deleteByUsername('cokees')
-    .then(rowCount => {
-        console.log(rowCount);
+// Deletes user by username
+// User.deleteByUsername('cokees')
+//     .then(rowCount => {
+//         console.log(rowCount);
+//     })
+
+
+
+// =======================
+//     Create Entries
+// =======================
+
+
+
+// =======================
+//    Retrieve Entries
+// =======================
+// Gets all entries
+Entries.getAllEntries()
+    .then(entries => {
+        console.log(entries);
     })
+
 
 
 
