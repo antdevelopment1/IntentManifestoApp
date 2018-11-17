@@ -15,7 +15,7 @@ app.get('/entries', (req, res) => {
         .then(entry => {
             res.send(entry);
         })
-})
+})/
 
 app.listen(3000, () => {
     console.log('Listening on port 3000');
