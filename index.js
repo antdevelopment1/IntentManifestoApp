@@ -95,10 +95,10 @@ const Entries = require('./models/entries');
 // })
 
 // Retrieve by title
-Entries.getByTitle('I love ')
-    .then(entry => {
-        console.log(entry);
-    })
+// Entries.getByTitle('I love ')
+//     .then(entry => {
+//         console.log(entry);
+//     })
 
 
 
@@ -107,7 +107,10 @@ Entries.getByTitle('I love ')
 
 
 // Retrieve by id
-
+Entries.getById(2)
+    .then(entry => {
+        console.log(entry);
+    })
 
 
 
