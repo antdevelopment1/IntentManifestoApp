@@ -142,10 +142,18 @@ const Entries = require('./models/entries');
 
 // Update by title
 
+// Entries.getById(1)
+//     .then(entry => {
+//         entry.updateByTitle('Bloopy')
+//             .then(rowCount => {
+//                 console.log(`${rowCount} row has been updated);;
+//             })
+//     })
+
 Entries.getById(1)
-    .then(entry => {
-        entry.updateByTitle('Bloopy')
-            .then(rowCount => {
-                console.log(rowCount);
-            })
-    })
+.then(entry => {
+    entry.updateByBody('blooby bloob bloob bloob bloob. Bloopidy bloop blo bloooppp?')
+        .then(rowCount => {
+            console.log(`${rowCount} row has been updated`);
+        })
+})
