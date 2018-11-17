@@ -1,19 +1,23 @@
-function userToItem(userObject) {
+function membersToItem(memberObject) {
+    console.log(memberObject);
     return `
-        <li class="user-list-item">
-          <a href="/users/${userObject.id}/todos">
-            ${userObject.name}
+        <li class="member-list-item">
+          <a href="/welcome">
+            ${memberObject.name}
           </a>
-          <a href="/users/${userObject.id}/edit">(edit)</a>
         </li>
     `;
 }
-function userList(arrayOfUsers) {
-    const userItems = arrayOfUsers.map(userToItem).join('');
-    console.log(userItems);
+// First function called
+function allMembers(arrayOfMembers) {
+    // Takes all members and maps through each member. Before logging each member we pass it to our membersToItem function
+    // That function takes each member and turns them into a list item with a class that is also an href anbd returns that value
+    // back to our current function
+    const memberItems = arrayOfMembers.map(membersToItem).join('');
+    // We log each member and return each li to our current ul tag which then returns to our page function
     return `
-        <ul>${userItems}</ul>
+        <ul>${memberItems}</ul>
     `;
 }
 
-module.exports = userList;
+module.exports = allMembers;
