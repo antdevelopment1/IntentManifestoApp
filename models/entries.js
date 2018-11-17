@@ -93,15 +93,22 @@ static getById(id) {
 }
 
 
-
-
-
-
 // ======================
 //         Update
 // ======================
 
 // Update entry by title
+updateByTitle(title) {
+    return db.result(`update entries set title=$2 where id=$1`, [this.id, title])
+        .then(result => {
+            if (result.rowCount === 1) {
+                console.log('User has been updated');
+            } else {
+                console.log('User has not been updated.')
+            }
+            return result.rowCount;
+        })
+}
 
 // Update entry body(the entry itself)
 
