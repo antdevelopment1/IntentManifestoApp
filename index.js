@@ -136,6 +136,12 @@ const Entries = require('./models/entries');
 //     })
 
 
+// Retrieve all entries by author
+Entries.getByAuthor('lilylove')
+    .then(authorEntries => {
+        console.log(authorEntries);
+    })
+
 // =======================
 //    Update Entries
 // =======================
@@ -170,7 +176,7 @@ const Entries = require('./models/entries');
 //     })
 
 // Delete by Id
-Entries.deleteById(8)
-    .then(rowCount => {
-        console.log(`${rowCount} affected.`)
-    })
+// Entries.deleteById(8)
+//     .then(rowCount => {
+//         console.log(`${rowCount} affected.`)
+//     })
