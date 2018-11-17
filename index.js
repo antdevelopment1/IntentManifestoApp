@@ -170,7 +170,7 @@ const Entries = require('./models/entries');
 //     })
 
 // Delete by Id
-// Entries.deleteById(4)
-    // .then(deleted => {
-    //     console.log(deleted)
-    // })
+Entries.deleteById(8)
+    .then(rowCount => {
+        console.log(`${rowCount} affected.`)
+    })
