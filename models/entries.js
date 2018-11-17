@@ -148,10 +148,11 @@ static deleteById(id) {
     return db.result(`delete from entries where id=$1`, [id])
     .then(result => {
         if (result.rowCount === 1) {
-            console.log('User has been deleted.');
+            console.log('Entry has been deleted.');
         } else {
-            console.log('User has not been deleted.')
+            console.log('Entry has not been deleted.')
         }
+        return result.rowCount;
     })
 }
 
