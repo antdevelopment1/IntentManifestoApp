@@ -85,11 +85,28 @@ const Entries = require('./models/entries');
 // =======================
 //    Retrieve Entries
 // =======================
+
 // Gets all entries
 Entries.getAllEntries()
     .then(entries => {
-        console.log(entries);
+        entries.forEach(entry => {
+        console.log(entry.entry);
     })
+})
+
+// Retrieve by title
+// Entries.getByTitle('I love ice cream')
+//     .then(entry => {
+//         console.log(entry);
+//     })
+
+
+
+// Retrieve by date
+
+
+
+// Retrieve by id
 
 
 
