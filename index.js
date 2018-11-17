@@ -11,7 +11,7 @@ const Entries = require('./models/entries');
 // =======================
 
 // Creates new user
-// User.createUser('Coke-Cola', 'cola', '$2b$10$QUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
+// User.createUser('Coke-Cdola', 'colda', '$2b$10$dQUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
 //     .then(newUser => {
 //         console.log(newUser);
 //     })
@@ -63,9 +63,9 @@ const Entries = require('./models/entries');
 // // =======================
 
 // // Deletes user by id
-// User.deleteById(17)
-//     .then(deleted => {
-//         console.log(deleted);
+// User.deleteById(2)
+//     .then(rowCount => {
+//         console.log(`${rowCount} affected`);
 //     })
 
 // Deletes user by username
@@ -164,7 +164,13 @@ const Entries = require('./models/entries');
 // =======================
 
 // Delete by title
-Entries.deleteByTitle('Bloopy')
-    .then(rowCount => {
-        console.log(`${rowCount} rows have been affected`);
-    })
+// Entries.deleteByTitle('Bloopy')
+//     .then(rowCount => {
+//         console.log(`${rowCount} rows have been affected`);
+//     })
+
+// Delete by Id
+// Entries.deleteById(4)
+    // .then(deleted => {
+    //     console.log(deleted)
+    // })
