@@ -2,8 +2,27 @@ require('dotenv').config();
 const User = require('./models/users');
 const Entries = require('./models/entries');
 
-// // const express = require('express');
-// // const app = express();
+const express = require('express');
+const app = express();
+
+
+app.get('/', (req, res) => {
+    res.send('howdy- how are you');
+});
+
+app.get('/entries', (req, res) => {
+    Entries.getById(1)
+        .then(entry => {
+            res.send(entry);
+        })
+})
+
+app.listen(3000, () => {
+    console.log('Listening on port 3000');
+})
+
+
+
 
 
 // =======================
