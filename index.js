@@ -90,7 +90,7 @@ const Entries = require('./models/entries');
 //    Retrieve Entries
 // =======================
 
-// Gets all entries
+// // Gets all entries
 // Entries.getAllEntries()
 //     .then(entries => {
 //         entries.forEach(entry => {
@@ -99,7 +99,7 @@ const Entries = require('./models/entries');
 // })
 
 // Retrieve by title
-// Entries.getByTitle('I love ')
+// Entries.getByTitle('bloopy')
 //     .then(entry => {
 //         console.log(entry);
 //     })
@@ -130,11 +130,22 @@ const Entries = require('./models/entries');
 
 
 // Retrieve by id
-// Entries.getById(2)
+// Entries.getById(1)
 //     .then(entry => {
 //         console.log(entry);
 //     })
 
 
+// =======================
+//    Update Entries
+// =======================
 
+// Update by title
 
+Entries.getById(1)
+    .then(entry => {
+        entry.updateByTitle('Bloopy')
+            .then(rowCount => {
+                console.log(rowCount);
+            })
+    })
