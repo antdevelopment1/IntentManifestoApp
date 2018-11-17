@@ -11,7 +11,7 @@ CREATE TABLE users (
 -- Entries Table
 CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
-    author TEXT REFERENCES users (username),
+    author TEXT REFERENCES users (username) ON DELETE CASCADE,
     title TEXT,
     date TIMESTAMP,
     entry TEXT,
