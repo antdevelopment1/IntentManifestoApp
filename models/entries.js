@@ -45,10 +45,24 @@ static getByTitle(title) {
 
 
 // Retrieve by date
+static getByDate() {
+    return db.any
+}
 
+// Retrieve entries from newest to oldest
+
+
+// Retrieve entries from oldest to newest
 
 
 // Retrieve by id
+static getById(id) {
+    return db.one(`select * from entries where id = $1`, [id])
+        .then(entry => {
+            const instance = new Entries(entry.id, entry.title, entry.date, entry.entry);
+                return instance;
+        })
+}
 
 
 
