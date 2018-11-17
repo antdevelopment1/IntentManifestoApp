@@ -111,14 +111,18 @@ const Entries = require('./models/entries');
 //     })
 
 // Retrieve by oldest date
-Entries.getOlderEntries()
-    .then(instance => {
-       instance.forEach(entry => {
-        console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
-       })
+// Entries.getOlderEntries()
+//     .then(instance => {
+//        instance.forEach(entry => {
+//         console.log(`Title: ${entry.title} \nEntry: ${entry.entry}`);
+//        })
+//     })
+
+// Retreive by date
+Entries.getByDate('2018-06-11','2018-09-13')
+    .then(entry => {
+        console.log(entry);
     })
-
-
 
 
 // Retrieve by id
