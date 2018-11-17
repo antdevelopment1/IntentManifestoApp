@@ -45,8 +45,8 @@ static getByTitle(title) {
 
 
 // Retrieve by date
-static getByDate() {
-    return db.any
+static getByDate(date1, date2) {
+    return db.any(`select * from entries where date between $1 and $2`, [date1, date2])
 }
 
 // Retrieve entries from newest to oldest
