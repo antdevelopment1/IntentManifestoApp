@@ -24,8 +24,41 @@ li {
 
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, .7);
+    color: white;
 }
+
+.button-container {
+    display: flex;
+    margin: 150px auto 0 auto;
+    justify-content: center;
+    align-content: space-between;
+}
+
+a.button {
+    padding: 15px 35px;
+    background-color: transparent;
+    transition: background-color .4s ease-in .1s, color .4s ease-in .1s;
+    width: 260px;
+    /* transition-duration: .5s; */
+    border-radius: 1px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, .8);
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 30px;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+}
+
+ a.button:hover {
+     opacity: 1;
+     background-color: rgba(255, 255, 255, .7);
+     color: rgba(0,0,0, .7);
+ }
+
 
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
@@ -37,11 +70,12 @@ a {
 
 header {
     display: flex;
-    height: 50px;
+    height: 55px;
     background-color: #2d2f33;
     /* padding: 35px 100px 0; */
     justify-content: space-between;
     align-items: center;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -51,6 +85,7 @@ header h2 {
     color: rgba(255, 255, 255, .8);
     font-weight: 400;
     font-size: 18px;
+    font-style: italic;
 }
 
 .nav-container nav, .nav-container h2, .hero-title {
@@ -88,12 +123,12 @@ header h2 {
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    margin-top: 130px;
+    margin-top: 200px;
 }
 
 .hero-title h1 {
     margin: 0 auto;
-    width: 33%;
+    width: 25%;
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
     font-size: 60px;
@@ -102,10 +137,13 @@ header h2 {
     margin-bottom: 30px;
 }
 .hero-title p {
+    margin-top: 50px;
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
+    font-style: italic;
+    font-weight: 500;
 }
 
 
