@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300, 400,600');
 
 * {
     margin: 0;
@@ -91,15 +91,20 @@ header h2 {
 }
 
 .hero-title h1 {
+    margin: 0 auto;
+    width: 35%;
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
 }
 .hero-title p {
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 35px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 
