@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300, 400,600');
 
 * {
     margin: 0;
@@ -18,6 +18,15 @@ section {
     /* align-items: center; */
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .7);
+}
+
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
     background-position: center;
@@ -26,11 +35,53 @@ section {
     height: 100vh;
 }
 
-
 header {
+    display: flex;
     height: 50px;
     background-color: #2d2f33;
+    /* padding: 35px 100px 0; */
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+header h2 {
+    margin-left: 50px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, .8);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-container nav, .nav-container h2, .hero-title {
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-container nav {
+    display: flex;
+    height: 50px;
+    background-color: #2d2f33;
+    align-items: center;
+}
+
+
+
+.nav-container nav li {
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+
 
 .hero-title {
     position: relative;
@@ -41,15 +92,20 @@ header {
 }
 
 .hero-title h1 {
+    margin: 0 auto;
+    width: 33%;
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
 }
 .hero-title p {
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 35px;
-    letter-spacing: 2px;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 
