@@ -53,9 +53,14 @@ a.button {
      color: rgba(0,0,0, .7);
  }
 
-/* =====================
-     HEADER SECTION
-====================== */
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
 
 header {
     display: flex;
@@ -100,11 +105,11 @@ header h2 {
     margin: 0 15px;
     letter-spacing: 1.5px;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .nav-container nav li a {
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     transition: border-bottom .3s ease-out .2s, opacity .3s ease-in-out .3s;
     opacity: .7;
 }
