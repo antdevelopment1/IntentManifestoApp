@@ -31,11 +31,32 @@ function page(content) {
             <h1 class="title">Intent Manifesto</h1>
             <p class="hero-message">Script your dreams into reality.</p>
             <div class="button-container">
-                ß<a href="#" class="button">Sign Up</a>
+                <a href="#" class="button">Sign Up</a>
                 <a href="#" class="button">Learn More</a>
             </div>
         </div> 
     </section>
+
+    <section class="about-section">
+        <div class="about-image">
+            <img src="/images/journal6.jpg" alt="">
+        </div>
+        <div class="about-p">
+            <p>Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums. Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums.Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums.Journals are cool. 
+            </p>
+            <p>Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums. Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums.Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
+                April likes to play the guitar, and the drums.
+            </p>
+            <a href="" class="about-button">Join Now</a>
+        </div>
+    </section>
+
+
     ${content}
      
     </body>
