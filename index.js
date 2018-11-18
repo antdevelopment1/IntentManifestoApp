@@ -24,7 +24,13 @@ const allMembers = require('./views/usersList');
 const entriesList = require('./views/entriesList');
 // const userForm = require('./views/userForm'); ** need to add form file
 
+// Home Directory / Root
+app.get('/', (req, res) => {
+    const thePage = page('Home Page');
+    res.send(`${thePage}`);
+})
 
+// Route to display all members
 app.get('/members', (req, res) => {
     User.getAll()
         .then(members => {
@@ -39,7 +45,7 @@ app.get('/welcome', (req, res) => {
 
 app.listen(3000, () => {
     console.log('Listening on port 3000');
-})/
+})
 
 
 
