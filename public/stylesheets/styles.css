@@ -113,6 +113,22 @@ header h2 {
     margin: 0 15px;
     letter-spacing: 1.5px;
     font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+.nav-container nav li a {
+    padding-bottom: 2px;
+    transition: border-bottom .3s ease-out .2s, opacity .3s ease-in-out .3s;
+    opacity: .7;
+}
+
+.nav-container nav li a:hover {
+    opacity: 1;
+}
+
+.nav-container nav li a:focus {
+    opacity: 1;
+    border-bottom: 1px solid white;
 }
 
 
