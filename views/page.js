@@ -14,7 +14,10 @@ function page(content) {
         <link rel="stylesheet" href="/stylesheets/styles.css">
     </head>
     <body>
+    <div class="main">
+        <h1>Howdy Doodie</h1>
         ${content}
+    </div>  
     </body>
     </html>    
     `;
