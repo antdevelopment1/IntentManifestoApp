@@ -50,6 +50,7 @@ header h2 {
     letter-spacing: 3px;
     color: rgba(255, 255, 255, .8);
     font-weight: 400;
+    font-size: 18px;
 }
 
 .nav-container nav, .nav-container h2, .hero-title {
@@ -92,7 +93,7 @@ header h2 {
 
 .hero-title h1 {
     margin: 0 auto;
-    width: 35%;
+    width: 33%;
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
     font-size: 60px;
