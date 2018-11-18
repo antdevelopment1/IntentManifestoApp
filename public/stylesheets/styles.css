@@ -44,11 +44,24 @@ header {
     align-items: center;
 }
 
+
 header h2 {
     margin-left: 50px;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, .8);
     font-weight: 400;
+}
+
+.nav-container nav, .nav-container h2, .hero-title {
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-container nav {
@@ -57,6 +70,8 @@ header h2 {
     background-color: #2d2f33;
     align-items: center;
 }
+
+
 
 .nav-container nav li {
     margin: 0 15px;

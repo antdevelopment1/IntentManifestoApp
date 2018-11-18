@@ -14,12 +14,29 @@ function page(content) {
         <link rel="stylesheet" href="/stylesheets/styles.css">
     </head>
     <body>
-    <div class="main">
-        <h1>Howdy Doodie</h1>
-        ${content}
-    </div>  
+
+    <header class="nav-container">
+        <h2><a href="#">Crystal Clear</a></h2>
+        <nav class="nav">
+                
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-title">
+            <h1 class="title">Crystal Clear</h1>
+            <p class="hero-message">Manifest your dreams into reality.</p>
+        </div> 
+    </section>
+    
+    ${content}
+     
     </body>
-    </html>    
+    </html>  
     `;
 }
 
