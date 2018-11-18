@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +11,47 @@ body {
     width: 100%;
     height: 100%;
 }
-.hero {
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.hero-section {
     background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
+
+
+header {
+    height: 50px;
+    background-color: #2d2f33;
+}
+
+.hero-title {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 130px;
+}
+
+.hero-title h1 {
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+}
+.hero-title p {
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+
+
 
