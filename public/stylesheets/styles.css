@@ -18,6 +18,15 @@ section {
     /* align-items: center; */
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .7);
+}
+
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
     background-position: center;
@@ -26,11 +35,37 @@ section {
     height: 100vh;
 }
 
-
 header {
+    display: flex;
     height: 50px;
     background-color: #2d2f33;
+    /* padding: 35px 100px 0; */
+    justify-content: space-between;
+    align-items: center;
 }
+
+header h2 {
+    margin-left: 50px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, .8);
+    font-weight: 400;
+}
+
+.nav-container nav {
+    display: flex;
+    height: 50px;
+    background-color: #2d2f33;
+    align-items: center;
+}
+
+.nav-container nav li {
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+
 
 .hero-title {
     position: relative;
