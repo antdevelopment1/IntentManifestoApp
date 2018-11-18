@@ -53,7 +53,6 @@ a.button {
      color: rgba(0,0,0, .7);
  }
 
-<<<<<<< HEAD
 
 .hero-section {
     background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0,.6)), url(./../images/journal1.jpg);
@@ -62,11 +61,6 @@ a.button {
     background-size: cover;
     min-height: 100%;
 }
-=======
-/* =====================
-     HEADER SECTION
-====================== */
->>>>>>> 68d6e1713ffd17eb6f3a1ce222d4ae354de36b63
 
 header {
     display: flex;
