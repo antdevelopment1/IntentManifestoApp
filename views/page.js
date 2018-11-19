@@ -56,6 +56,23 @@ function page(content) {
         </div>
     </section>
 
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="image img1"><img src="./../public/images/journal2.jpg" alt=""></div>
+            <div class="image img2"><img src="./../public/images/journal9.jpg" alt=""></div>
+            <div class="image img3"><img src="./../public/images/journal11.jpg" alt=""></div>
+            <div class="image img4"><img src="./../public/images/journal12.jpg" alt=""></div>
+            <div class="image img4"><img src="./../public/images/journal13.jpg" alt=""></div>
+            <div class="image img5"><img src="./../public/images/journal14.jpg" alt=""></div>
+            <div class="image img6"><img src="./../public/images/journal3.jpg" alt=""></div>
+            <div class="image img7"><img src="./../public/images/journal5.jpg" alt=""></div> 
+            <div class="image img7"><img src="./../public/images/journal6.jpg" alt=""></div> 
+            <div class="image img8"><img src="./../public/images/journal4.jpg" alt=""></div>
+            <div class="image img9"><img src="./../public/images/journal17.jpg" alt=""></div>
+            <div class="image img9"><img src="./../public/images/journal18.jpg" alt=""></div>
+        </div>
+    </section>
+
 
     ${content}
      
