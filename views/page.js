@@ -67,6 +67,12 @@ function page(content) {
     </section>
 
     <section class="gallery-section">
+            <div class="gallery-title">
+                    <h1>Inspiration Gallery</h1>
+            </div>
+            <div class="hrgallery">
+                <hr>
+            </div>
             <div class="gallery-container">
                 <div class="image img1"><img src="/images/journal2.jpg" alt=""></div>
                 <div class="image img2"><img src="/images/journal9.jpg" alt=""></div>
@@ -79,12 +85,11 @@ function page(content) {
                 <div class="image img7"><img src="/images/journal6.jpg" alt=""></div> 
                 <div class="image img8"><img src="/images/journal4.jpg" alt=""></div>
                 <div class="image img9"><img src="/images/journal17.jpg" alt=""></div>
-                <div class="image img9"><img src="/images/journal19.jpg" alt=""></div>
+                <div class="image img9"><img src="/images/journal18.jpg" alt=""></div>
             </div>
     </section>
-
-</body>
-</html>
+    </body>
+    </html>  
     `;
 }
 
