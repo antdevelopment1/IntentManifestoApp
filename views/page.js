@@ -82,6 +82,9 @@ function page(content) {
                 <div class="image img9"><img src="/images/journal19.jpg" alt=""></div>
             </div>
     </section>
+
+</body>
+</html>
     `;
 }
 
