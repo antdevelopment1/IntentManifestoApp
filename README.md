@@ -1,5 +1,5 @@
 # IntentManifestoApp
-Journal Entry App in Progress
+Intent Manifesto App in Progress
 Intent Manifesto is a place for those share goals, dreams, ideas, art, and creativity of from all different walks of life.
 Not yet sized for screens smaller than 1600px - Responsive Design Coming Soon
 
