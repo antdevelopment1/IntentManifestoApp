@@ -57,7 +57,7 @@ function page(content) {
         </div>
         <div class="about-content">
             <div class="about-image">
-                <img src="/images/journal20.jpg" alt="">
+               
             </div>
             <div class="about-p">
                 <p>
