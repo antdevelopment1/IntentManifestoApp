@@ -158,7 +158,7 @@ h1.title {
     align-content: center;
     letter-spacing: 2px;
     font-size: 35px;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 .hero-hr{
@@ -325,7 +325,7 @@ a.button:hover {
    transition: transform .4s ease-in, opacity .4s ease-in;
    opacity: .7;
    border-radius: 1px;
-   margin-bottom: 25px;
+   /* margin-bottom: 25px; */
 } 
 
 .about-image img:hover {
@@ -420,7 +420,7 @@ a.button:hover {
     display: flex;
     justify-content: center;
     align-content: center;
-    line-height: 1.3rem;
+    line-height: 1.7rem;
     font-size: 1.2rem;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
