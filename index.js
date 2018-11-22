@@ -22,10 +22,10 @@ app.use(bodyParser.json());
 // ================================
 //       Views Module Imports
 // ================================
-const landingPage = require('./views/landingPage');
-const loginPage = require('./views/login');
-const registerPage = require('./views/register');
-const dashboardPage = require('./views/dashbaord');
+const homepage = require('./views/home');
+const loginpage = require('./views/login');
+const registerpage = require('./views/register');
+const dashboardpage = require('./views/dashbaord');
 
 // ================================
 //       Routes GET / POST
@@ -33,7 +33,7 @@ const dashboardPage = require('./views/dashbaord');
 
 // Home Directory / Root
 app.get('/', (req, res) => {
-    res.send(landingPage());
+    res.send(homepage());
 })
 
 // Login Page
