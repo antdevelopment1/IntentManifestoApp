@@ -158,6 +158,7 @@ h1.title {
     align-content: center;
     letter-spacing: 2px;
     font-size: 35px;
+    outline: 1px solid green;
 }
 
 .hero-hr{
