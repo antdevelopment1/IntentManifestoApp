@@ -47,12 +47,12 @@ app.get('/register', (req, res) => {
     res.send('This the register page');
 })
 
-// Dashboard
+// Dashboard Page
 app.get('/dashboard', (req, res) => {
     res.send('This the dashboard');
 })
 
-// Logout
+// Logout Page
 app.post('/logout', (req, res) => {
     res.send('You have logged out');
 })
@@ -112,9 +112,9 @@ app.listen(3000, () => {
     console.log('Listening on port 3000');
 })
 
-// =======================
-//     Models Functions
-// =======================
+// ========================================
+//             Models Functions
+// ========================================
 
 // =======================
 //      Create User
