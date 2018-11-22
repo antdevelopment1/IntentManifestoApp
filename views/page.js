@@ -11,7 +11,7 @@ function page(content) {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" href="/stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
     <body>
 
@@ -19,14 +19,14 @@ function page(content) {
         <div class="nav-container">
             <header>
                 <div class="header-h2">
-                <h2><a href="#">Intent Manifesto</a></h2>
+                <!-- <h2><a href="#">Intent Manifesto</a></h2> -->
                 </div>
                 <nav class="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Login</a></li>
-                    <li><a href="#">Inspiration</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">Inspiration</a></li>
                 </nav>
             </header>
         </div>
@@ -38,7 +38,8 @@ function page(content) {
                 </div>
             </div>
             <div class="hero-message">
-                <p>Script your dreams into reality.</p>
+                <p>Pour your thoughts out</p>
+                <p>and script your dreams into reality.</p>
             </div>
             <div class="button-container">
                 <a href="#" class="button button1">Sign Up</a>
@@ -81,7 +82,10 @@ function page(content) {
                 <hr>
             </div>
             <div class="gallery-p">
-                <p>Words are but pictures of our thoughts</p>
+                <p>Words are but pictures of our thoughts...
+                    <br>
+                   Explore the thoughts of others.
+                </p>
             </div>
             <div class="gallery-container">
                 <div class="image img1"><img src="/images/journal2.jpg" alt=""></div>
@@ -111,7 +115,7 @@ function page(content) {
             <div class="contact-form">
                 <form class="myform" action="submit">
                     First Name: 
-                    <input type="text">
+                    <input type="text" width="20" height="20">
                     <br>
                     Last Name:
                     <input type="text">
