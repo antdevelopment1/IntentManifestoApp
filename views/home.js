@@ -11,9 +11,10 @@ function homePage(content) {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="/stylesheets/styles.css">
     </head>
     <body>
+
     <section class="hero-section">
         <div class="nav-container">
             <header>
@@ -56,7 +57,7 @@ function homePage(content) {
         </div>
         <div class="about-content">
             <div class="about-image">
-               
+                <!-- <img src="/images/journal20.jpg" alt=""> -->
             </div>
             <div class="about-p">
                 <p>
@@ -105,27 +106,26 @@ function homePage(content) {
     <section class="contact-section">
         <div class="contact-container">
             <div class="contact-title">
-                <h1>Keep In Touch</h1>
+                <h1>Join Our Mailing List</h1>
             </div>
             <div class="hrcontact">
                 <hr>
             </div>
         </div>
             <div class="contact-form">
-                <form class="myform" action="submit">
-                    First Name: 
-                    <input type="text" width="20" height="20">
-                    <br>
-                    Last Name:
-                    <input type="text">
-                    <br>
-                    Email:
-                    <input type="text">
-                    <br>
-                    Message:
-                    <input type="text">
-                    <br>
-                </form>
+                <form action="/register">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="" required>
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="" required>
+                    </select>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
             </div>
             <div class="footer-section">
                 <footer>
