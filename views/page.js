@@ -15,34 +15,43 @@ function page(content) {
     </head>
     <body>
 
-    <header class="nav-container">
-        <h2><a href="#">Intent Manifesto</a></h2>
-        <nav class="nav">
-                
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Inspiration</a></li>
-            <li><a href="#">Contact</a></li>
-        </nav>
-    </header>
     <section class="hero-section">
-        <div class="hero-title">
-            <h1 class="title">Intent Manifesto</h1>
-            <p class="hero-message">Script your dreams into reality.</p>
+        <div class="nav-container">
+            <header>
+                <div class="header-h2">
+                <h2><a href="#">Intent Manifesto</a></h2>
+                </div>
+                <nav class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+            </header>
+        </div>
+        <div class="hero-title-content">
+            <div class="hero-title">
+                <h1 class="title">Intent Manifesto</h1>
+                <div class="hero-hr">
+                    <hr>
+                </div>
+            </div>
+            <div class="hero-message">
+                <p>Script your dreams into reality.</p>
+            </div>
             <div class="button-container">
-                <a href="#" class="button">Sign Up</a>
-                <a href="#" class="button">Learn More</a>
+                <a href="#" class="button button1">Sign Up</a>
+                <a href="#" class="button button2">Learn More</a>
             </div>
         </div> 
     </section>
 
     <section class="about-section">
-    
         <div class="about-title">
             <h1>About Intent Manifesto</h1>
         </div>
-        <div class="hr">
+        <div class="about-hr">
             <hr>
         </div>
         <div class="about-content">
@@ -50,28 +59,29 @@ function page(content) {
                 <img src="/images/journal20.jpg" alt="">
             </div>
             <div class="about-p">
-                <p>Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums. Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums.Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums.Journals are cool. 
+                <p>
+                    Et spoon rich, siphon, strong grounds, single shot a redeye bar shop. Redeye whipped, americano that, decaffeinated robust latte to go rich. 
+                    Java aroma milk turkish extra dark galão. Id as, at, mazagran robusta frappuccino grinder cream blue mountain white french press variety. 
+                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam. 
                 </p>
-                <p>Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums. Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums.Journals are cool. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums. The dog is brown. I made rice but April isn't eating it. Watercolors are fun.
-                    April likes to play the guitar, and the drums.Journals are cool
+                <p>Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
+                    aroma. Strong as french press mazagran, grinder, carajillo cappuccino mazagran macchiato mazagran. Espresso french press saucer, sweet organic that a 
+                    café au lait body caramelization ristretto irish. Aroma at, roast so beans skinny grounds.
                 </p>
-                <a href="" class="about-button">Join Now</a>
+                <a href="#" class="about-button">Join Now</a>
             </div>
         </div>
     </section>
 
     <section class="gallery-section">
             <div class="gallery-title">
-                    <h1>Inspiration Gallery</h1>
+                <h1>Inspiration Gallery</h1>
             </div>
             <div class="hrgallery">
                 <hr>
+            </div>
+            <div class="gallery-p">
+                <p>Words are but pictures of our thoughts</p>
             </div>
             <div class="gallery-container">
                 <div class="image img1"><img src="/images/journal2.jpg" alt=""></div>
@@ -85,9 +95,52 @@ function page(content) {
                 <div class="image img7"><img src="/images/journal6.jpg" alt=""></div> 
                 <div class="image img8"><img src="/images/journal4.jpg" alt=""></div>
                 <div class="image img9"><img src="/images/journal17.jpg" alt=""></div>
-                <div class="image img9"><img src="/images/journal18.jpg" alt=""></div>
+                <div class="image img9"><img src="/images/journal19.jpg" alt=""></div>
             </div>
     </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-title">
+                <h1>Keep In Touch</h1>
+            </div>
+            <div class="hrcontact">
+                <hr>
+            </div>
+        </div>
+            <div class="contact-form">
+                <form class="myform" action="submit">
+                    First Name: 
+                    <input type="text">
+                    <br>
+                    Last Name:
+                    <input type="text">
+                    <br>
+                    Email:
+                    <input type="text">
+                    <br>
+                    Message:
+                    <input type="text">
+                    <br>
+                </form>
+            </div>
+            <div class="footer-section">
+                <footer>
+                    <div class="footer-li">
+                        <li>april</li>
+                        <li>april</li>
+                        <li>lauren</li>
+                        <li>lauren</li>
+                    </div>
+                    <div class="footer-p">
+                            <p class="copywrite">
+                                Pictures courtesy of Upsplash.
+                            </p>
+                        </div>
+                </footer>
+            </div>
+    </section>
+
     </body>
     </html>  
     `;
