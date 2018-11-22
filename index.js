@@ -1,7 +1,10 @@
+// ==================================
+//  NPM's and Model Database Imports
+// ==================================
 require('dotenv').config();
 const User = require('./models/users');
 const Entries = require('./models/entries');
-
+// ---------------------------------------
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -24,10 +27,74 @@ const allMembers = require('./views/usersList');
 const entriesList = require('./views/entriesList');
 // const userForm = require('./views/userForm'); ** need to add form file
 
+// ================================
+//       Routes GET / POST
+// ================================
+
 // Home Directory / Root
 app.get('/', (req, res) => {
     const thePage = page('Home Page');
     res.send(`${thePage}`);
+})
+
+// Login Page
+app.get('/login', (req, res) => {
+    res.send('This is the login page');
+})
+
+// Register Page
+app.get('/register', (req, res) => {
+    res.send('This the register page');
+})
+
+// Dashboard
+app.get('/dashboard', (req, res) => {
+    res.send('This the dashboard');
+})
+
+// Logout
+app.post('/logout', (req, res) => {
+    res.send('You have logged out');
+})
+
+// ================================
+//       Routes GET / POST
+//   Once Inside User Dashboard
+// ================================
+
+// Directs user to their personal dashboard
+app.get('/dashboard/:id([0-9]+)', (req, res) => {
+    res.send('This is the users personal page');
+})
+
+// Create an entry inside user's dashboard
+app.get('/dashboard/:id([0-9]+)/newentry', (req, res) => {
+    res.send('You may now create your new entry');
+})
+
+// Retrieve all entries from a user
+app.get('/dashboard/:id(\\d+)/entryupdate', (req, res) => {
+    res.send('This is the user\'s page with all their entries');
+})
+
+// Allow a user to edit / update the entries
+app.get('/dashboard/:id([0-9]+)/entryedit', (req, res) => {
+    res.send('You may now edit your entry');
+})
+
+// Allow a user to edit their username
+app.get('/dashboard/:id([0-9]+)/editusername', (req, res) => {
+    res.send('You may now edit your username');
+})
+
+// Allow a user to edit their password
+app.get('/dashboard/:id([0-9]+)/editpassword', (req, res) => {
+    res.send('You may now edit your password');
+})
+
+// Allows user to delete an entry
+app.get('/dashboard/:id([0-9]+)/deleteentry', (req, res) => {
+    res.send('You deleted the entry');
 })
 
 // Route to display all members
@@ -39,17 +106,15 @@ app.get('/members', (req, res) => {
             res.send(`${thePage}`);
         })
 })
-app.get('/welcome', (req, res) => {
-    res.send(`Hello. Welcome to your journal`)
-})
+
 
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 })
 
-
-
-
+// =======================
+//     Models Functions
+// =======================
 
 // =======================
 //      Create User
@@ -119,8 +184,6 @@ app.listen(3000, () => {
 //         console.log(rowCount);
 //     })
 
-
-
 // =======================
 //     Create Entries
 // =======================
@@ -129,7 +192,6 @@ app.listen(3000, () => {
 //     .then(newEntry => {
 //         console.log(newEntry);
 //     })
-
 
 // =======================
 //    Retrieve Entries
@@ -148,8 +210,6 @@ app.listen(3000, () => {
 //     .then(entry => {
 //         console.log(entry);
 //     })
-
-
 
 // Retrieve by newest date
 // Entries.getNewerEntries()
@@ -180,7 +240,6 @@ app.listen(3000, () => {
 //         console.log(entry);
 //     })
 
-
 // Retrieve all entries by author
 // Entries.getByAuthor('lilylove')
 //     .then(authorEntries => {
@@ -208,7 +267,6 @@ app.listen(3000, () => {
 //             console.log(`${rowCount} row has been updated`);
 //         })
 // })
-
 
 // =======================
 //     Delete Entries
