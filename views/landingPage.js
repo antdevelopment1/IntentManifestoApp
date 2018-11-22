@@ -1,4 +1,4 @@
-// const { header, footer } = require('./helper')
+// const { header, footer, logoutButton, login_registerButton } = require('./helper')
 
 function page(content) {
     
@@ -14,7 +14,6 @@ function page(content) {
         <link rel="stylesheet" href="stylesheets/styles.css">
     </head>
     <body>
-
     <section class="hero-section">
         <div class="nav-container">
             <header>
