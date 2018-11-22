@@ -44,7 +44,7 @@ hr {
 header {
     display: flex;
     flex-direction: row;
-    height: 130px;
+    height: 150px;
     width: 100%;
     padding: 35px;
     align-items: flex-start;
@@ -147,7 +147,7 @@ header {
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     font-weight: 100;
-    height: 200px;
+    height: 180px;
     text-align: center;
     /* outline: 2px solid blueviolet; */
 }
@@ -184,7 +184,7 @@ h1.title {
     color: rgba(255, 255, 255, .8);
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-style: italic;
     font-weight: 500;
 }
@@ -210,7 +210,7 @@ a.button {
     margin-bottom: 20px;
     width: 55%;
     background-color: transparent;
-    transition: background-color .3s ease-in .1s, color .3s ease-in .1s;
+    transition: background-color .2s ease-in .1s, color .2s ease-in .1s;
     border-radius: 1px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, .8);
@@ -276,7 +276,7 @@ a.button:hover {
     justify-content: center;
     align-content: center;
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     /* align-self: flex-end; */
 }
@@ -310,20 +310,21 @@ a.button:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     height: 100%;
     /* min-height: 100%; */
     /* outline: 1px solid purple; */
 }
 
 .about-image img {
-   height: 60%;
-   width: 60%;
-   box-shadow: 3px 3px 3px #000;
+   height: 100%;
+   width: 65%;
+   box-shadow: 4px 4px 3px #000;
    transform: scale(1.03);
    transition: transform .4s ease-in, opacity .4s ease-in;
    opacity: .7;
-   border-radius: 3px;
+   border-radius: 1px;
+   margin-bottom: 25px;
 } 
 
 .about-image img:hover {
@@ -345,14 +346,14 @@ a.button:hover {
     width: 75%;
     text-align: justify;
     text-indent: 25px;
-    padding: 14px 0;
+    padding: 20px 0 0 0;
     line-height: 1.4rem;
     font-size: 1rem;
     font-family: 'Cormorant Garamond', serif;
 }
 
 .about-p a {
-    margin: 40px auto;
+    margin: 40px auto 70px auto;
     color: #807c71;
     outline: 1px solid #807c71;
     padding: 13px 37px;
@@ -392,17 +393,15 @@ a.button:hover {
     justify-content: center;
     align-content: center;
     font-size: 1.4rem;
-}
-.gallery-title {
-    /* color: #807c71; */
     color: rgba(45, 47, 51, .9);
     padding: 50px 0 15px 0;
+    /* color: #807c71; */
     /* outline: 1px solid green; */
 }
 
 .gallery-title h1 {
     margin: 15px;
-    
+    font-size: 31px; 
 }
 
 .hrgallery {
@@ -420,8 +419,9 @@ a.button:hover {
     display: flex;
     justify-content: center;
     align-content: center;
-    line-height: 1.5rem;
-    font-size: 1.3rem;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    text-align: center;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
 }
@@ -451,7 +451,7 @@ a.button:hover {
     max-width: 230px;
     align-content: center;
     align-self: center;
-    padding: 10px 0;
+    margin-bottom: 15px;
 }
 
 /* =====================
