@@ -22,10 +22,10 @@ app.use(bodyParser.json());
 // ================================
 //       Views Module Imports
 // ================================
-const page = require('./views/page');
-const allMembers = require('./views/usersList');
-const entriesList = require('./views/entriesList');
-// const userForm = require('./views/userForm'); ** need to add form file
+const landingPage = require('./views/landingPage');
+const loginPage = require('./views/login');
+const registerPage = require('./views/register');
+const dashboardPage = require('./views/dashbaord');
 
 // ================================
 //       Routes GET / POST
@@ -33,8 +33,7 @@ const entriesList = require('./views/entriesList');
 
 // Home Directory / Root
 app.get('/', (req, res) => {
-    const thePage = page('Home Page');
-    res.send(`${thePage}`);
+    res.send(landingPage());
 })
 
 // Login Page
@@ -98,14 +97,14 @@ app.get('/dashboard/:id([0-9]+)/deleteentry', (req, res) => {
 })
 
 // Route to display all members
-app.get('/members', (req, res) => {
-    User.getAll()
-        .then(members => {
-            const usersUL = allMembers(members);
-            const thePage = page(usersUL);
-            res.send(`${thePage}`);
-        })
-})
+// app.get('/members', (req, res) => {
+//     User.getAll()
+//         .then(members => {
+//             const usersUL = allMembers(members);
+//             const thePage = page(usersUL);
+//             res.send(`${thePage}`);
+//         })
+// })
 
 
 app.listen(3000, () => {
