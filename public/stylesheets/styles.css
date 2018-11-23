@@ -568,32 +568,41 @@ input[type=submit]:hover {
     color: #2d2f33;
 }
 
+
+
+/* =====================
+         FOOTER
+====================== */
 .footer-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: space-between;
+    /* justify-content: center; */
+    /* align-items: space-between; */
+    /* align-content: center; */
     /* outline: 1px solid greenyellow; */
-    height: 60px;
+    height: 100px;
     width: 100%;
     padding: 10px 10px;
     background-color: #2d2f33
+
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: center; */
+    /* align-content: center; */
     /* outline: 2px solid pink; */
     width: 100%;
-    height: 50px;
+    height: 100%;
+    padding-top: 10px;
 }
 
 footer .footer-p{
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;;
+    /* align-content: flex-start; */
+    /* justify-content: center; */
     height: 100%;
     width: 100%;
 }
@@ -602,12 +611,11 @@ footer p {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, .4);
-}
-
-.copywtire a {
-    size: 1rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .6);
+    letter-spacing: 1px;
+    padding-top: 2px;
+    /* outline: 1px solid lightblue; */
 }
 
 .footer-li {
@@ -616,6 +624,9 @@ footer p {
     flex-basis: 70%;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
+    padding: 10px 0 15px 0;
+    /* outline: 2px solid yellow; */
 }
 
 footer li {
@@ -623,5 +634,15 @@ footer li {
     flex-direction: row;
     line-height: 1.4rem;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    /* color: rgba(255, 255, 255, .4); */
+ }
+
+ footer li a i {
+    color: rgba(255, 255, 255, .4);
+    transition: color .2s ease-in-out .1s;
+ }
+
+ footer li a i:hover {
+    color: rgba(255, 255, 255, .8);
  }

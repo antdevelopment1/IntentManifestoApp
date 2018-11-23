@@ -11,6 +11,7 @@ function homePage(content) {
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="/stylesheets/styles.css">
     </head>
     <body>
@@ -57,7 +58,7 @@ function homePage(content) {
         </div>
         <div class="about-content">
             <div class="about-image">
-                <!-- <img src="/images/journal20.jpg" alt=""> -->
+                <!-- <img src="../public/images/journal20.jpg" alt=""> -->
             </div>
             <div class="about-p">
                 <p>
@@ -113,7 +114,7 @@ function homePage(content) {
             </div>
         </div>
             <div class="contact-form">
-                <form action="/register">
+                <form action="/register" method="GET">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="" required>
                 
@@ -122,30 +123,30 @@ function homePage(content) {
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="" required>
-                    </select>
                   
                     <input type="submit" value="Submit">
                   </form>
             </div>
             <div class="footer-section">
                 <footer>
+                    
                     <div class="footer-li">
-                        <li>april</li>
-                        <li>april</li>
-                        <li>lauren</li>
-                        <li>lauren</li>
+                        <li><a href="https://github.com/antdevelopment1" title="April-Github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://github.com/antdevelopment1" title="April-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/laurenayn" title="Lauren-Github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://github.com/laurenalyn" title="Lauren-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                     </div>
                     <div class="footer-p">
-                            <p class="copywrite">
-                                Pictures courtesy of Upsplash.
-                            </p>
-                        </div>
+                        <p class="copyright">
+                            &copy Copyright 2018 Locksley Logic
+                        </p>
+                    </div>
                 </footer>
             </div>
     </section>
 
     </body>
-    </html>  
+    </html>    
     `;
 }
 
