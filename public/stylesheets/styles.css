@@ -646,3 +646,30 @@ footer li {
  footer li a i:hover {
     color: rgba(255, 255, 255, .8);
  }
+
+
+/* =====================
+       MEDIA QUERIES
+====================== */
+
+@media only screen and (min-width: 415px) {
+	
+}
+
+@media only screen and (min-width: 540px) {
+	
+}
+
+@media only screen and (min-width: 768px) {
+		
+}
+
+@media only screen and (min-width: 916px) {
+	
+}
+
+@media only screen and (min-width: 1399px) {
+	
+}
+
+
