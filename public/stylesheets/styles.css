@@ -657,7 +657,46 @@ footer li {
 }
 
 @media only screen and (min-width: 540px) {
-	
+    a.button {
+        width: 50%;
+    }
+    
+    h1.title {
+        font-size: 37px;
+    }
+
+    .hero-message {
+        font-size: 22px;
+    }
+
+    .about-p {
+        margin-top: 10px;
+    }
+    .about-p p {
+        line-height: 1.7rem;
+        letter-spacing: .05rem;
+    }
+
+    .gallery-p p {
+        font-size: 1.25rem;
+    }
+
+    form {
+        width: 65%;
+    }
+
+    input {
+        margin: 25px 0;
+    }
+
+    footer li a i {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        letter-spacing: 0.04rem;;
+    }
 }
 
 @media only screen and (min-width: 768px) {
