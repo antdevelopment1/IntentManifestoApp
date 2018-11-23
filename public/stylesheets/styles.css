@@ -699,6 +699,58 @@ footer li {
     }
 }
 
+@media only screen and (min-width: 600px) {
+		.hero-title {
+            height: 200px;
+        }
+
+        h1.title {
+            font-size: 40px;
+        }
+
+        a.button {
+            width: 50%;
+        }
+
+        .about-content{
+
+        }
+
+        .about-p p {
+            line-height: 1.8rem;
+            font-size: 1.1rem;
+            padding-bottom: 20px;
+        }
+
+        label {
+            font-size: 25px;
+            letter-spacing: .05rem;
+        }
+
+        input {
+            margin: 30px 0;
+        }
+
+        input[type=submit] {
+            font-size: 22px;
+        }
+
+        footer li a i {
+            font-size: 1.6rem;
+        }
+
+        footer p {
+            padding-top: 5px;
+            font-size: 1.2rem;
+        }
+
+
+}
+
+@media only screen and (min-width: 700px) {
+		
+}
+
 @media only screen and (min-width: 768px) {
 		
 }
