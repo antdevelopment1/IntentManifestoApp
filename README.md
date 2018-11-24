@@ -20,13 +20,5 @@
 ## Built By April Copes and Lauren Wilkerson
 All design layouts are original layout ideas. No libraries or framworks were used for layout design. Layouts were built in pure HTML and CSS.
 
-## Technologies Used
-- HTML
-- CSS
-- Node.js
-- JavaScript
-- SQL
-- Express
-
 ## Inspired By
 Chris Aquino | Digitial Crafts Instructor class demo of a note todo app revamped into personalized manifesto of indiviuality, art, intention, and creativity. Also inspired by modern bullet journals.
