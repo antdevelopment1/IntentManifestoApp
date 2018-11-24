@@ -13,7 +13,7 @@
 - JavaScript
 - Express
 
-## Built By:
+## Built By
 All design layouts are original layout ideas by April Copes and Lauren Wilkerson. No libraries or framworks were used for layout design. Layouts Built in pure HTML and CSS
 
 ## Technologies Used
@@ -24,5 +24,5 @@ JavaScript
 SQL
 Express
 
-## Inspired By:
+## Inspired By
 Chris Aquino | Digitial Crafts Instructor class demo of a note todo app revamped into personalized manifesto of indiviuality, art, intention, and creativity. Also inspired by modern bullet journals.
