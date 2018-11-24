@@ -9,6 +9,13 @@
 <img src="readme/images/gallerypic.png" width="350">
 <img src="readme/images/contactpic.png" width="350">
 
+
+## Inspired By
+Chris Aquino | Digitial Crafts Instructor class demo of a note todo app revamped into personalized manifesto of indiviuality, art, intention, and creativity. Also inspired by modern bullet journals.
+
+## Built By April Copes and Lauren Wilkerson
+All design layouts are original layout ideas. No libraries or framworks were used for layout design. Layouts were built in pure HTML and CSS.
+
 ## Teachnologies Used
 - HTML5
 - CSS3
@@ -16,9 +23,3 @@
 - SQL
 - JavaScript
 - Express
-
-## Built By April Copes and Lauren Wilkerson
-All design layouts are original layout ideas. No libraries or framworks were used for layout design. Layouts were built in pure HTML and CSS.
-
-## Inspired By
-Chris Aquino | Digitial Crafts Instructor class demo of a note todo app revamped into personalized manifesto of indiviuality, art, intention, and creativity. Also inspired by modern bullet journals.
