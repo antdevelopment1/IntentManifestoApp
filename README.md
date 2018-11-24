@@ -4,7 +4,7 @@
 
 ## What is Intent Manifesto
 ### Intent Manifesto is a place for those to visualize their goals, dreams, ideas, and most intimate thoughts into reality.
-<img src="readme/images/aboutpic.png" width="100">
+<img src="readme/images/aboutpic.png" width="500">
 
 ## Teachnologies Used
 - HTML5
