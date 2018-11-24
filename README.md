@@ -4,10 +4,10 @@
 
 ## What is Intent Manifesto
 ### Intent Manifesto is a place for those to visualize their goals, dreams, ideas, and most intimate thoughts into reality.
-<img src="readme/images/revisedIntentmanifestopic.png" width="400">
-<img src="readme/images/aboutpic.png" width="400">
-<img src="readme/images/gallerypic.png" width="400">
-<img src="readme/images/contactpic.png" width="400">
+<img src="readme/images/revisedIntentmanifestopic.png" width="350">
+<img src="readme/images/aboutpic.png" width="350">
+<img src="readme/images/gallerypic.png" width="350">
+<img src="readme/images/contactpic.png" width="350">
 
 
 ## Teachnologies Used
