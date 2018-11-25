@@ -16,7 +16,7 @@
 - Revamped into personalized manifesto for all to express their indiviuality, art, intention, and creativity.
 
 ## Built By April Copes and Lauren Wilkerson
-All design layouts are original layout ideas. No libraries or framworks were used for layout design. Layouts were built in pure HTML and CSS.
+All design layouts are original layout ideas. No libraries or frameworks were used for layout design. Layouts were built in pure HTML and CSS.
 
 ## Teachnologies Used
 - HTML5
@@ -25,3 +25,4 @@ All design layouts are original layout ideas. No libraries or framworks were use
 - SQL
 - JavaScript
 - Express
+
