@@ -11,7 +11,9 @@
 
 
 ## Inspired By
-Chris Aquino | Digitial Crafts Instructor class demo of a note todo app revamped into personalized manifesto of indiviuality, art, intention, and creativity. Also inspired by modern bullet journals.
+- Chris Aquino | Digitial Crafts Instructor | Class Demo Note Todo App 
+- Modern Bullet Journals
+- Revamped into personalized manifesto for all to express their indiviuality, art, intention, and creativity.
 
 ## Built By April Copes and Lauren Wilkerson
 All design layouts are original layout ideas. No libraries or framworks were used for layout design. Layouts were built in pure HTML and CSS.
