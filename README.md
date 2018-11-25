@@ -6,14 +6,6 @@
 ### Intent Manifesto is a place for those to visualize their goals, dreams, ideas, and most intimate thoughts into reality.
 ![](public/stylesheets/images/journal1.jpg)
 
-## Teachnologies Used
-- HTML5
-- CSS3
-- Node.js
-- SQL
-- JavaScript
-- Express
-
 ## Built By
 All design layouts are original layout ideas by April Copes and Lauren Wilkerson. No libraries or framworks were used for layout design. Layouts Built in pure HTML and CSS
 
