@@ -1,5 +1,5 @@
 # IntentManifestoApp
-## Intent Manifesto App in Progress Design Build In Progress
+## Intent Manifesto App - Design Build In Progress
 - Not yet sized for screens larger than 400px - Responsive Design Coming Soon
 
 ## What is Intent Manifesto
