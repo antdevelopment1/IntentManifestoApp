@@ -8,7 +8,7 @@ Not yet sized for screens larger than 400px - Responsive Design Coming Soon
 Personal Fullstack Project Revamping a Node Todo App into A Full Fledged Personalized Journal
 Inspired by Modern Bullet Journals
 
-All design layouts are built from scratch by April Copes and Lauren Wilkerson. No libraries were used to design CSS. 
+All design layouts are built from scratch by April Copes And Lauren Wilkerson. No libraries were used to design CSS. 
 Layout design built in pure html and css.
 
 Technologies used thus far
