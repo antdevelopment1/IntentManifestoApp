@@ -652,7 +652,7 @@ footer li {
        MEDIA QUERIES
 ====================== */
 
-@media only screen and (min-width: 540px) {
+/* @media only screen and (max-width: 540px) {
     a.button {
         width: 50%;
     }
@@ -693,9 +693,9 @@ footer li {
         font-size: 1.2rem;
         letter-spacing: 0.04rem;;
     }
-}
+} */
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .hero-title {
         height: 200px;
     }
@@ -735,13 +735,13 @@ footer li {
         padding-top: 5px;
         font-size: 1.2rem;
     }
-}
+} */
 
-@media only screen and (min-width: 700px) {
+ /* @media only screen and (max-width: 768px) {
     .nav-container nav {
         flex-direction: row;
         align-items: flex-start;
-        /* outline: 1px solid red; */
+        outline: 1px solid red;
     }
     
     .nav {
@@ -762,7 +762,7 @@ footer li {
     }
 
     .button-container {
-        /* outline: 1px solid blue; */
+        outline: 1px solid blue;
         height: 200px;
         margin: 70px 0;
         flex-direction: row;
@@ -806,19 +806,88 @@ footer li {
         padding-top: 5px;
         font-size: 1.4rem;
     }
-}
+} */
 
-@media only screen and (min-width: 1399px) {
-	
-}
+/* @media only screen and (max-width: 768px) { */
+    /* .nav-container nav {
+        flex-direction: row;
+        align-items: flex-start;
+        outline: 1px solid red;
+    }
+    
+    .nav {
+        width: 100%;
+    }
 
-@media only screen and (min-width: 916px) {
-	
-}
+    .nav-container nav li {
+        margin: 0 5px;
+    }
 
-@media only screen and (min-width: 768px) {
+    .hero-title {
+        height: 200px;
+    }
+
+    .hero-message p{
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .button-container {
+        outline: 1px solid blue;
+        height: 200px;
+        margin: 70px 0;
+        flex-direction: row;
+        width: 60%;
+        align-self: center;
+    }
+
+    a.button {
+        margin: 0 7px 20px 7px;
+        font-size: 27px;
+        padding: 14px 8px;
+    }
+
+    .about-title h1 {
+        font-size: 33px;
+    }
+    .about-p p {
+        width: 70%;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .gallery-title h1 {
+        font-size: 33px;
+    }
+
+    .gallery-p p {
+        font-size: 1.4rem;
+    }
+
+    .footer-section {
+        height: 125px;
+        padding-bottom: 20px;
+    }
+
+    footer li a i {
+        font-size: 2rem;
+    }
+
+    footer p {
+        padding-top: 5px;
+        font-size: 1.4rem;
+    } */
 		
+/* } */
+
+@media only screen and (max-width: 916px) {
+	
 }
+
+@media only screen and (max-width: 1399px) {
+	
+}
+
 
 
 
