@@ -1,21 +1,28 @@
 # IntentManifestoApp
-Intent Manifesto App in Progress
+## Intent Manifesto App - Design Build In Progress
+- Not yet sized for screens larger than 400px - Responsive Design Coming Soon
 
-Intent Manifesto is a place for those to share their goals, dreams, ideas, art, and creativity from all different walks of life.
+## What is Intent Manifesto
+### Intent Manifesto is a place for those to visualize their goals, dreams, ideas, and most intimate thoughts into reality.
+<img src="readme/images/revisedIntentmanifestopic.png" width="350">
+<img src="readme/images/aboutpic.png" width="350">
+<img src="readme/images/gallerypic.png" width="350">
+<img src="readme/images/contactpic.png" width="350">
 
-Not yet sized for screens larger than 400px - Responsive Design Coming Soon
 
-Personal Fullstack Project Revamping a Node Todo App into A Full Fledged Personalized Journal
-Inspired by Modern Bullet Journals
+## Inspired By
+- Chris Aquino | Digitial Crafts Instructor | Class Demo Note Todo App 
+- Modern Bullet Journals
+- Revamped into personalized manifesto for all to express their indiviuality, art, intention, and creativity.
 
-All design layouts are built from scratch by April Copes and Lauren Wilkerson. No libraries were used to design CSS. 
-Layout design built in pure html and css.
+## Built By April Copes and Lauren Wilkerson
+All design layouts are original layout ideas. No libraries or frameworks were used for layout design. Layouts were built in pure HTML and CSS.
 
-Technologies used thus far
+## Teachnologies Used
+- HTML5
+- CSS3
+- Node.js
+- SQL
+- JavaScript
+- Express
 
-HTML
-CSS
-Node.js
-JavaScript
-SQL
-Express
