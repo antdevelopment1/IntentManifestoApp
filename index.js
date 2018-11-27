@@ -305,22 +305,55 @@ app.listen(3000, () => {
 // =======================
 //     Create Email
 // =======================
-Email.addEmail('Lucas', 'Thomas', 'george@gmail.com')
-   .then(result => {
-       console.log('Email has been added to our mailing list');
-   })
+// Email.addEmail('Lucas', 'Thomas', 'george@gmail.com')
+//    .then(result => {
+//        console.log('Email has been added to our mailing list');
+//    })
+
 // Retrieve email from mailing list
 // =======================
 //    Retrieve Email
 // =======================
-// Email.get
+// Email.getEmail('Samantha', 'Kirk', 'justin@brown.com')
+//     .then(result => {
+//         console.log(result);
+//     })  
+
+// Retrieve all emails from mailing list
+// Email.getAllEmails()
+//     .then(allEmails => {
+//         allEmails.forEach(email => {
+//             console.log(email.email);
+//         })
+//     })
 
 // Update email from mailing list
 // =======================
 //     Update Email
 // =======================
+// Email.getEmail('Samantha', 'Kirk', 'justin@brown.com')
+//     .then(result => {
+//         result.updateEmail('kevin@brown.com')
+//             .then(result => {
+//                 if (result.rowCount === 1) {
+//                     console.log('Your email has been updated');
+//                 } else {
+//                     console.log('Your email has not been updated');
+//                 }
+//             })
+//     })
 
 // Unsubscribe from mailing list
 // =======================
 //     Delete Email
 // =======================
+
+// Add error handeling for if email is not on mailing list
+Email.unsubscribe('justin@brown.com')
+    .then(result => {
+        if (result.rowCount === 1) {
+            console.log('You are unsubscribed');
+        } else {
+            console.log('You are still subscribed to our mailing list');
+        }
+    })
