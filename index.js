@@ -38,17 +38,17 @@ app.get('/', (req, res) => {
 
 // Login Page
 app.get('/login', (req, res) => {
-    res.send('This is the login page');
+    res.send(loginpage());
 })
 
 // Register Page
 app.get('/register', (req, res) => {
-    res.send('This the register page');
+    res.send(registerpage());
 })
 
 // Dashboard Page
 app.get('/dashboard', (req, res) => {
-    res.send('This the dashboard');
+    res.send(dashboardpage());
 })
 
 // Logout Page
@@ -120,7 +120,7 @@ app.listen(3000, () => {
 // =======================
 
 // Creates new user
-// User.createUser('Coke-Cdola', 'colda', '$2b$10$dQUJ346ylCYC7rIS2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK')
+// User.createUser('kevin', 'blue', 'green', '$2b$10$S2cbqEq.l4o.HCL6r.pZokcF6Tivha/UTXDi.JK', 'yahoo@gmail.com')
 //     .then(newUser => {
 //         console.log(newUser);
 //     })
@@ -144,6 +144,13 @@ app.listen(3000, () => {
 //     .then(username => {
 //         console.log(username);
 //     })
+
+// Get active email from user
+// User.getUserByEmail('antdevelopment1@gmail.com')
+//     .then(userEmail => {
+//         console.log(userEmail);
+//     })
+
 
 // // ====================== 
 // //      Update User
@@ -196,13 +203,31 @@ app.listen(3000, () => {
 //    Retrieve Entries
 // =======================
 
-// // Gets all entries
+// // Gets all entries from every user
 // Entries.getAllEntries()
 //     .then(entries => {
 //         entries.forEach(entry => {
 //             console.log(entry.entry);
 //     })
 // })
+
+// Retrieve all entries from a single user by username
+Entries.getByAuthor('lilylove')
+    .then(user => {
+        user.forEach(eachInstance => {
+            console.log(`Title: ${eachInstance.title} Entry: ${eachInstance.entry}`);
+        })
+    })
+
+
+
+
+
+
+
+
+
+
 
 // Retrieve by title
 // Entries.getByTitle('bloopy')
@@ -282,3 +307,25 @@ app.listen(3000, () => {
 //     .then(rowCount => {
 //         console.log(`${rowCount} affected.`)
 //     })
+
+
+
+// Add email to mailing list
+// =======================
+//     Create Email
+// =======================
+
+// Retrieve email from mailing list
+// =======================
+//    Retrieve Email
+// =======================
+
+// Update email from mailing list
+// =======================
+//     Update Email
+// =======================
+
+// Unsubscribe from mailing list
+// =======================
+//     Delete Email
+// =======================
