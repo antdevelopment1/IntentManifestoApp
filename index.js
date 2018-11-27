@@ -4,6 +4,7 @@
 require('dotenv').config();
 const User = require('./models/users');
 const Entries = require('./models/entries');
+const Email = require('./models/mailinglist');
 // ---------------------------------------
 const express = require('express');
 const app = express();
@@ -212,22 +213,12 @@ app.listen(3000, () => {
 // })
 
 // Retrieve all entries from a single user by username
-Entries.getByAuthor('lilylove')
-    .then(user => {
-        user.forEach(eachInstance => {
-            console.log(`Title: ${eachInstance.title} Entry: ${eachInstance.entry}`);
-        })
-    })
-
-
-
-
-
-
-
-
-
-
+// Entries.getByAuthor('lilylove')
+//     .then(user => {
+//         user.forEach(eachInstance => {
+//             console.log(`Title: ${eachInstance.title} Entry: ${eachInstance.entry}`);
+//         })
+//     })
 
 // Retrieve by title
 // Entries.getByTitle('bloopy')
@@ -310,15 +301,19 @@ Entries.getByAuthor('lilylove')
 
 
 
-// Add email to mailing list
+// Add new email to mailing list
 // =======================
 //     Create Email
 // =======================
-
+Email.addEmail('Lucas', 'Thomas', 'george@gmail.com')
+   .then(result => {
+       console.log('Email has been added to our mailing list');
+   })
 // Retrieve email from mailing list
 // =======================
 //    Retrieve Email
 // =======================
+// Email.get
 
 // Update email from mailing list
 // =======================
