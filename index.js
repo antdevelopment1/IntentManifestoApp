@@ -310,10 +310,11 @@ app.listen(3000, () => {
 //        console.log('Email has been added to our mailing list');
 //    })
 
-// Retrieve email from mailing list
+
 // =======================
 //    Retrieve Email
 // =======================
+// Retrieve email from mailing list
 // Email.getEmail('Samantha', 'Kirk', 'justin@brown.com')
 //     .then(result => {
 //         console.log(result);
