@@ -1,7 +1,7 @@
 {
   "name": "bulletjournalapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Not yet sized for screens larger than 400px - Responsive Design Coming Soon",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.18.3",

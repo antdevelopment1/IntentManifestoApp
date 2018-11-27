@@ -1,49 +1,60 @@
 const db = require('./db');
 
 class User {
-    constructor(id, name, username, pwhash) {
+    constructor(id, firstname, lastname, username, pwhash, email) {
         this.id = id;
-        this.name = name;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.username = username;
         this.pwhash = pwhash;
+        this.email = email;
     }
 
 
-// ======================
-//      Create User
-// ======================
+    // ======================
+    //      Create User
+    // ======================
 
-    static createUser(name, username, pwhash) {
-        return db.one(`insert into users (name, username, pwhash) values ($1, $2, $3) returning id`, [name, username, pwhash])
+    static createUser(firstname, lastname, username, pwhash, email) {
+        // console.log(firstname, lastname, username, pwhash, email);
+        return db.one(`insert into users (firstname, lastname, username, pwhash, email) values ($1, $2, $3, $4, $5) returning id`, [firstname, lastname, username, pwhash, email])
             .then(id => {
-                const newUser = new User(id.id, name, username, pwhash)
+                const newUser = new User(id.id, firstname, lastname, username, pwhash, email);
                 return(newUser);
             })
+
     }
 
-
-
-// ======================
-//     Retrieve User
-// ======================
-// Gets all users from users table
+    // ======================
+    //     Retrieve User
+    // ======================
+    // Gets all users from users table
     static getAll() {
         return db.any(`select * from users`);
     }
 
-// Get user by id
+    // Get user by id
     static getById(id) {
         return db.one(`select * from users where id = ${id}`)
             .then(person => {
                 return person;
             })
     }
-// Get user by username
+
+    // Get user by username
     static getByUsername(username) {
         return db.one(`select * from users where username ilike '%$1:raw%'`, [username])
             .then(person => {
-                    const newUserName = new User(person.id, person.name, person.username, person.pwhash);
+                    const newUserName = new User(person.id, person.firstname, person.lastname, person.username, person.pwhash, person.email);
                     return newUserName;
+            })
+    }
+    // Retrieve user by email
+    static getUserByEmail(email) {
+        return db.one(`select * from users where email = $1`, [email])
+            .then(user => {
+                const userEmail = new User(user.id, user.firstname, user.lastname, user.username, user.pwhash, user.email);
+                return userEmail;
             })
     }
 
@@ -109,9 +120,6 @@ class User {
 
 
 }
-
-
-
 
 module.exports = User;
 
