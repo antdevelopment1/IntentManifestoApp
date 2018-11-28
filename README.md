@@ -1,6 +1,6 @@
 # IntentManifestoApp
 ## Intent Manifesto App - Design Build In Progress
-- Not yet sized for screens larger than 400px - Responsive Design Coming Soon
+- Not yet sized for all screens - Responsive Design Coming Soon
 
 ## What is Intent Manifesto
 ### Intent Manifesto is a place for those to visualize their goals, dreams, ideas, and most intimate thoughts into reality.
