@@ -350,11 +350,11 @@ app.listen(3000, () => {
 // =======================
 
 // Add error handeling for if email is not on mailing list
-Email.unsubscribe('justin@brown.com')
-    .then(result => {
-        if (result.rowCount === 1) {
-            console.log('You are unsubscribed');
-        } else {
-            console.log('You are still subscribed to our mailing list');
-        }
-    })
+// Email.unsubscribe('justin@brown.com')
+//     .then(result => {
+//         if (result.rowCount === 1) {
+//             console.log('You are unsubscribed');
+//         } else {
+//             console.log('You are still subscribed to our mailing list');
+//         }
+//     })
