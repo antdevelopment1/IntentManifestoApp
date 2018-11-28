@@ -17,6 +17,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
+
 section {
     display: flex;
     flex-direction: column;
@@ -432,7 +433,7 @@ header {
     align-items: center;
     height: 75%;
     width: 56%;
-    margin: 40px auto 40px auto;
+    margin: 40px auto 100px auto;
     /* border: 6px solid #4f4444; */
 }
 
@@ -441,18 +442,29 @@ header {
     align-content: center;
     flex-basis: 33.33%;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    /* z-index: 3; */
 }
 
 .image img {
-    min-height: 270px;
-    min-width: 257px;
-    max-height: 270px;
-    max-width: 270px;
+    min-height: 310px;
+    min-width: 310px;
+    max-height: 310px;
+    max-width: 310px;
     align-content: center;
     align-self: center;
-    margin: 0 auto 30px auto;
+    /* margin: 0 auto 30px auto; */
+    opacity: .7;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
 }
+.image img:hover {
+    opacity:1;
+    transform: scale(1.03);
+}
+
 
 /* =====================
       CONTACT SECTION
