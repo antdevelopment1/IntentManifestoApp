@@ -19,15 +19,14 @@ function homePage(content) {
     <section class="hero-section">
         <div class="nav-container">
             <header>
-                <div class="header-h2">
-                <!-- <h2><a href="#">Intent Manifesto</a></h2> -->
-                </div>
-                <nav class="nav">
+                <!-- <div class="header-h2">
+                <h2><a href="#">Intent Manifesto</a></h2>
+                </div> -->
+                <nav>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Login</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Login</a></li>
                 </nav>
             </header>
         </div>
@@ -64,11 +63,13 @@ function homePage(content) {
                 <p>
                     Et spoon rich, siphon, strong grounds, single shot a redeye bar shop. Redeye whipped, americano that, decaffeinated robust latte to go rich. 
                     Java aroma milk turkish extra dark galão. Id as, at, mazagran robusta frappuccino grinder cream blue mountain white french press variety. 
+                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam frappuccino grinder cream blue mountain white french press variety. 
                     Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam. 
                 </p>
                 <p>Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
                     aroma. Strong as french press mazagran, grinder, carajillo cappuccino mazagran macchiato mazagran. Espresso french press saucer, sweet organic that a 
-                    café au lait body caramelization ristretto irish. Aroma at, roast so beans skinny grounds.
+                    café au lait body caramelization ristretto irish. Aroma at, roast so beans skinny groundsfrappuccino grinder cream blue mountain white french press variety. 
+                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam.
                 </p>
                 <a href="#" class="about-button">Join Now</a>
             </div>
@@ -95,12 +96,12 @@ function homePage(content) {
                 <div class="image img4"><img src="/images/journal12.jpg" alt=""></div>
                 <div class="image img4"><img src="/images/journal13.jpg" alt=""></div>
                 <div class="image img5"><img src="/images/journal14.jpg" alt=""></div>
-                <div class="image img6"><img src="/images/journal3.jpg" alt=""></div>
+                <!-- <div class="image img6"><img src="./../public/images/journal3.jpg" alt=""></div>
                 <div class="image img7"><img src="/images/journal5.jpg" alt=""></div> 
                 <div class="image img7"><img src="/images/journal6.jpg" alt=""></div> 
                 <div class="image img8"><img src="/images/journal4.jpg" alt=""></div>
                 <div class="image img9"><img src="/images/journal17.jpg" alt=""></div>
-                <div class="image img9"><img src="/images/journal19.jpg" alt=""></div>
+                <div class="image img9"><img src="/images/journal19.jpg" alt=""></div> -->
             </div>
     </section>
 
@@ -123,18 +124,27 @@ function homePage(content) {
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="" required>
+                    </select>
                   
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="submit">
                   </form>
             </div>
             <div class="footer-section">
                 <footer>
-                    
-                    <div class="footer-li">
-                        <li><a href="https://github.com/antdevelopment1" title="April-Github"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://github.com/antdevelopment1" title="April-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/laurenayn" title="Lauren-Github"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://github.com/laurenalyn" title="Lauren-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <div class="footer-links">
+                        <div class="thanks-container">
+                            <p class="thanks">Images Courtesy Of <span>Unsplash</span></p>
+                        </div>
+                        <div class="footer-li">
+                            <li><a href="https://github.com/antdevelopment1" title="April-Github"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://github.com/antdevelopment1" title="April-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/laurenayn" title="Lauren-Github"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://github.com/laurenalyn" title="Lauren-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                        </div>
+                        <div class="learn-more">
+                            <p class="learn">Built With <i class="fas fa-heart"></i>, <i class="fas fa-coffee"></i>, & <i class="fas fa-grin-tears"></i></p>
+                        </div>
+                        
                     </div>
                     <div class="footer-p">
                         <p class="copyright">
@@ -146,7 +156,7 @@ function homePage(content) {
     </section>
 
     </body>
-    </html>    
+    </html>      
     `;
 }
 
