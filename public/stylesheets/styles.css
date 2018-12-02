@@ -43,7 +43,7 @@ hr {
 header {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 100%;
     width: 100%;
     padding: 35px;
     margin-bottom: 75px;
@@ -72,7 +72,7 @@ header {
 .nav-container nav {
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 100%;
     align-items: flex-start;
     justify-content: flex-end;
     /* outline: 2px solid green; */
@@ -138,6 +138,7 @@ header {
     color: rgba(255, 255, 255, .8);
     height: 180px;
     text-align: center;
+    margin-top: 50px;
     /* outline: 2px solid blueviolet; */
 }
 .hero-title h1{
