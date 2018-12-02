@@ -42,9 +42,17 @@ app.get('/login', (req, res) => {
     res.send(loginpage());
 })
 
+app.post('/login', (req, res) => {
+    // some stuff here
+})
+
 // Register Page
 app.get('/register', (req, res) => {
     res.send(registerpage());
+})
+
+app.post('/register', (req, res) => {
+    // Adds some stuff here
 })
 
 // Dashboard Page
@@ -82,14 +90,24 @@ app.get('/dashboard/:id([0-9]+)/entryedit', (req, res) => {
     res.send('You may now edit your entry');
 })
 
+app.post('/dashboard/:id([0-9]+)/entryedit', (req, res) => {
+    // Some stuff here
+})
+
 // Allow a user to edit their username
 app.get('/dashboard/:id([0-9]+)/editusername', (req, res) => {
     res.send('You may now edit your username');
+})
+app.post('/dashboard/:id([0-9]+)/editusername', (req, res) => {
+    // some stuff here
 })
 
 // Allow a user to edit their password
 app.get('/dashboard/:id([0-9]+)/editpassword', (req, res) => {
     res.send('You may now edit your password');
+})
+app.post('/dashboard/:id([0-9]+)/editpassword', (req,res) => {
+    // some stuff here
 })
 
 // Allows user to delete an entry
@@ -113,7 +131,7 @@ app.listen(3000, () => {
 })
 
 // ========================================
-//             Models Functions
+//   Controller Calls to Models Functions
 // ========================================
 
 // =======================
@@ -301,10 +319,11 @@ app.listen(3000, () => {
 
 
 
-// Add new email to mailing list
+
 // =======================
 //     Create Email
 // =======================
+// Add new email to mailing list
 // Email.addEmail('Lucas', 'Thomas', 'george@gmail.com')
 //    .then(result => {
 //        console.log('Email has been added to our mailing list');
@@ -328,10 +347,11 @@ app.listen(3000, () => {
 //         })
 //     })
 
-// Update email from mailing list
+
 // =======================
 //     Update Email
 // =======================
+// Update email from mailing list
 // Email.getEmail('Samantha', 'Kirk', 'justin@brown.com')
 //     .then(result => {
 //         result.updateEmail('kevin@brown.com')
@@ -344,11 +364,11 @@ app.listen(3000, () => {
 //             })
 //     })
 
-// Unsubscribe from mailing list
+
 // =======================
 //     Delete Email
 // =======================
-
+// Unsubscribe from mailing list
 // Add error handeling for if email is not on mailing list
 // Email.unsubscribe('justin@brown.com')
 //     .then(result => {
