@@ -150,16 +150,14 @@ header {
     letter-spacing: 5px;
 }
 
-.hero-title .hero-hr{
+.hero-hr {
     display: flex;
+    flex-direction: center;
     justify-content: center;
     align-content: center;
-    height: 20px;
-}
-
-.hero-hr hr{
-    width: 8%;
-    background-image: linear-gradient(to right, whitesmoke, white, whitesmoke);
+    align-self: center;
+    width: 13%;
+    background-image: linear-gradient(to right, rgb(243, 239, 239), white, rgb(243, 239, 239));
 }
 
 .hero-message {
@@ -181,7 +179,7 @@ header {
     font-style: italic;
     font-weight: 300;
     /* outline: 1px solid red; */
-    height: 35px;;
+    height: 35px;
 }
 
 .button-container {
@@ -276,6 +274,7 @@ header {
     font-size: 3rem;
     text-align: center;
     color: #807c71;
+    letter-spacing: 3px;
 }
 
 .about-hr {
@@ -513,33 +512,62 @@ header {
     background-image: linear-gradient(to right, whitesmoke,  rgba(45, 47, 51, .9), whitesmoke);
 }
 
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+
+.contact-p {
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-p p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 25px;
+    padding: 15px 0 15px 0;
+    line-height: 2rem;
+    letter-spacing: .05rem;
+    font-size: 1.6rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .contact-form {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding: 60px 0 30px 0;
-    /* outline: 2px solid blue; */
+    padding: 10px 0 20px 0;
+    outline: 2px solid blue;
 }
 
 form {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     align-self: center;
     height: 100%;
     padding: 100px 0;
-    margin: 0 0 30px 0;
-    width: 30%;
+    /* margin: 0 0 30px 0; */
+    width: 100%;
     border: 3px solid rgba(45, 47, 51, .6);
     box-shadow: 3px 3px 5px rgba(45, 47, 51, .5);
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
+}
+
+.form {
+    width:80%;
 }
 
 label {
+    outline: 1px solid green;
     font-size: 1.5rem;
     letter-spacing: .05rem;
     padding: 10px 0;
@@ -549,11 +577,11 @@ label {
 input {
     margin: 15px 0;
     padding-top: 25px;
-    /* outline: 1px solid red; */
+    outline: 1px solid orange;
 }
 
 input[type=text], input[type=email] {
-    width: 45%;
+    width: 50%;
     padding: 10px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -564,7 +592,7 @@ input[type=text], input[type=email] {
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 70%;
     background-color: rgba(45, 47, 51, .9);
     color: white;
     padding: 13px 20px;
@@ -830,6 +858,11 @@ footer li {
         line-height: 1.7rem;
     }
 
+    .about-p a {
+        font-size: 1.5rem;
+        width: 20%;
+    }
+
     .gallery-title h1 {
         font-size: 2.65rem;
     }
@@ -864,6 +897,8 @@ footer li {
         margin-left: 15px;
         padding: 12px 10px;
     } */
+
+
 }
 
 @media screen and (max-width:900px) {
@@ -871,18 +906,21 @@ footer li {
     .nav-container nav li {
         padding: 13px 15px;
     }
+
+    .about-p p {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 875px) {
-
-    /* .nav-container nav{
-        justify-content: space-around;
-    } */
 
     .nav-container nav li {
         padding: 13px 10px;
     }
 
+    .about-p a {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -900,32 +938,148 @@ footer li {
         letter-spacing: 3px;
     }
 
+    .hero-hr {
+        width: 18%;
+    }
+
     .hero-message p {
         font-size: 1.3em;
     }
 
     .button-container {
-        margin: 0 auto;
+        margin: 5px auto;
     }
-    
+
     .button-container .button{
         width: 25%;
     }
+
+    .about-title h1{
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .about-p p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .about-p a {
+        font-size: 1.4rem;
+        width: 40%;
+    }
 }
 
-@media screen and (max-width:600px) {
-    
+@media screen and (max-width:650px) {
+    .nav-container nav{
+        justify-content: space-around;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container .button{
+        width: 65%;
+        margin: 10px 0;
+    }
+
+    .about-title h1{
+        font-size: 2.2rem;
+    }
+
+    .about-p p {
+        width: 75%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .about-p a {
+        font-size: 1.3rem;
+        width: 45%;
+    }
 }
 
-@media screen and (max-width:525px) {
-    
+@media screen and (max-width:575px) {
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-message p {
+        font-size: 1.2rem;
+    }
+
+    .about-title h1 {
+        font-size: 2rem;
+    }
+
+    .about-p p {
+        font-size: 1.2rem;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .nav-container nav li {
+        letter-spacing: 1px;
+        /* font-family: 'Cormorant Garamond', serif; */
+        font-size: 1.1rem;
+    }
+
+    .hero-hr {
+        width: 30%;
+    }
+
+    .hero-message p {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        height: 20px;
+    }
+    .button-container {
+        margin-bottom: 32px;
+        /* outline: 1px solid red; */
+    }
+
+    .button-container .button {
+        font-size: 1.2rem;
+        width: 65%;
+        margin: 6px 0;
+    }
+
+    .about-title h1 {
+        letter-spacing: 1px;
+    }
+
+    .about-p p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+}
+
 
 @media screen and (max-width:400px) {
-    
+    .hero-message p {
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    .about-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+    .about-p {
+        width: 85;
+    }
+
+    .about-p p {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
 }
 @media screen and (max-width:360px) {
-    
+    .about-p a {
+        font-size:1.1rem;
+        width: 60%;
+    }
 }
 @media screen and (max-width:320px) {
     
