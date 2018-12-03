@@ -206,7 +206,7 @@ header {
     /* margin-bottom: 20px; */
     margin-left: 10px;
     margin-right: 10px;
-    width: 20%;
+    width: 23%;
     background-color: transparent;
     transition: background-color .2s ease-in .1s, color .2s ease-in .1s;
     border-radius: 1px;
@@ -461,6 +461,7 @@ header {
     transform: scale(1.15);
     transition: transform .5s, opacity .5s;
 }
+
 .image img:hover {
     opacity:1;
     transform: scale(1.03);
@@ -732,26 +733,184 @@ footer li {
 }
 
 @media screen and (max-width:1300px) {
+    header {
+        margin-bottom:35px;
+    }
+
+    .hero-title {
+        margin-top: 0;
+    }
+
     .nav-container nav li {
         padding: 13px 25px;
     }
-    
+
+    .button-container {
+        margin-bottom: 150px;
+    }
+
+    .about-title h1{
+        font-size: 2.65rem;
+    }
+
+    .about-p {
+        width: 100%;
+    }
+
+    .about-p p {
+        width: 57%;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.65rem;
+    }
+
+    .gallery-p {
+        line-height: 1.9rem;
+        font-size: 1.4rem;
+    }
+
+    .image img {
+        min-height: 240px;
+        min-width: 240px;
+        max-height: 240px;
+        max-width: 240px;
+    }
+
+    .contact-title h1 {
+        font-size: 2.65rem;
+    }
+
+    form {
+        width:37%;
+        padding: 50px 0;
+    }  
 }
 
 @media screen and (max-width:1100px) {
-    
+    header {
+        margin-bottom:25px;
+    }
+
+    .nav-container nav li {
+        padding: 13px 20px;
+    }
+
+    .hero-title {
+        height: 150px;
+    }
+
+    .hero-title h1 {
+        font-size: 2.4rem; 
+    }
+
+    .hero-message p {
+        font-size: 1.4em;
+    }
+
+    .button-container .button {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        padding: 12px 0;
+    }
+
+    .about-title h1{
+        font-size: 2.65rem;
+    }
+
+    .about-p {
+        width: 100%;
+    }
+
+    .about-p p {
+        width: 57%;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.65rem;
+    }
+
+    .gallery-p {
+        line-height: 1.9rem;
+        font-size: 1.4rem;
+    }
+
+    .image img {
+        min-height: 240px;
+        min-width: 240px;
+        max-height: 240px;
+        max-width: 240px;
+    }
+
+    .contact-title h1 {
+        font-size: 2.65rem;
+    }
+
+    form {
+        width:37%;
+        padding: 50px 0;
+    }
+
+   
 }
 
 @media screen and (max-width:1000px) {
-    
+    /* .button-container .button {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 12px 10px;
+    } */
 }
 
 @media screen and (max-width:900px) {
     
+    .nav-container nav li {
+        padding: 13px 15px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+
+    /* .nav-container nav{
+        justify-content: space-around;
+    } */
+
+    .nav-container nav li {
+        padding: 13px 10px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
+
+    header {
+        padding: 35px 15px 35px 0;
+    }
+
+    .nav-container nav li {
+        padding: 13px 4px;
+    }
+
+    .hero-title h1 {
+        font-size: 2.3rem; 
+        letter-spacing: 3px;
+    }
+
+    .hero-message p {
+        font-size: 1.3em;
+    }
+
+    .button-container {
+        margin: 0 auto;
+    }
     
+    .button-container .button{
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:600px) {
