@@ -19,8 +19,8 @@
                 </div> -->
                 <nav>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Login</a></li>
                 </nav>
             </header>
@@ -43,7 +43,7 @@
         </div> 
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-title">
             <h1>About Intent Manifesto</h1>
         </div>
@@ -100,7 +100,7 @@
             </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-container">
             <div class="contact-title">
                 <h1>Join Our Mailing List</h1>
@@ -109,8 +109,20 @@
                 <hr>
             </div>
         </div>
+        <div class="contact-content">
+            <div class="contact-p">
+                <p>
+                    Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
+                    aroma. Strong as french press mazagran, grinder, carajillo cappuccino mazagran macchiato mazagran. Espresso french press saucer, sweet organic that a 
+                    café au lait body caramelization ristretto irish. Aroma at, roast so beans skinny groundsfrappuccino grinder cream blue mountain white french press variety. 
+                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam.
+                </p>
+                <p>
+                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam.
+                </p>
+            </div>
             <div class="contact-form">
-                <form action="/register" method="GET">
+                <form action="/register" method="GET" class="form">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="" required>
                 
@@ -124,6 +136,7 @@
                     <input type="submit" value="Submit" class="submit">
                   </form>
             </div>
+        </div>
             <div class="footer-section">
                 <footer>
                     <div class="footer-links">
