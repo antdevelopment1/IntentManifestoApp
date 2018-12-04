@@ -402,6 +402,7 @@ header {
 .gallery-title h1 {
     margin: 15px;
     font-size: 3rem; 
+    letter-spacing: 3px;
 }
 
 .hrgallery {
@@ -421,6 +422,7 @@ header {
     align-content: center;
     line-height: 2.3rem;
     font-size: 1.6rem;
+    letter-spacing: .05rem;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
@@ -499,6 +501,7 @@ header {
 .contact-title h1 {
     color:  rgba(45, 47, 51, .9);
     font-size: 3rem;
+    letter-spacing: 3px;
 }
 
 .hrcontact {
@@ -514,27 +517,35 @@ header {
 
 .contact-content {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
+    height: 100%;
     align-content: center;
+    /* outline: 1px solid red; */
 }
 
 .contact-p {
     width: 50%;
+    height: 100%;
+    margin: auto 0;
     align-content: center;
     justify-content: center;
 }
 
 .contact-p p {
-    width: 80%;
+    width: 70%;
+    height: 100%;
     margin: 0 auto;
     text-align: justify;
+    align-content: center;
+    justify-content: center;
     text-indent: 25px;
     padding: 15px 0 15px 0;
     line-height: 2rem;
     letter-spacing: .05rem;
     font-size: 1.6rem;
     font-family: 'Cormorant Garamond', serif;
+    /* outline: 1px solid green; */
 }
 
 .contact-form {
@@ -544,7 +555,7 @@ header {
     width: 50%;
     height: 100%;
     padding: 10px 0 20px 0;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 
 form {
@@ -554,12 +565,12 @@ form {
     align-items: center;
     align-self: center;
     height: 100%;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     /* margin: 0 0 30px 0; */
     width: 100%;
     border: 3px solid rgba(45, 47, 51, .6);
     box-shadow: 3px 3px 5px rgba(45, 47, 51, .5);
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .form {
@@ -567,7 +578,7 @@ form {
 }
 
 label {
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
     font-size: 1.5rem;
     letter-spacing: .05rem;
     padding: 10px 0;
@@ -577,7 +588,7 @@ label {
 input {
     margin: 15px 0;
     padding-top: 25px;
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
 }
 
 input[type=text], input[type=email] {
@@ -796,7 +807,7 @@ footer li {
     }
 
     .gallery-p {
-        line-height: 1.9rem;
+        line-height: 1.7rem;
         font-size: 1.4rem;
     }
 
@@ -815,6 +826,29 @@ footer li {
         width:37%;
         padding: 50px 0;
     }  
+
+
+    .form {
+        width:60%;
+    }
+    
+    label {
+        /* outline: 1px solid green; */
+        font-size: 1.4rem;
+        letter-spacing: .05rem;
+        padding: 6px 0;
+    }
+    
+    input {
+        margin: 3px 0;
+        padding-top: 15px;
+        /* outline: 1px solid orange; */
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 20px;
+    }
 }
 
 @media screen and (max-width:1100px) {
@@ -855,7 +889,6 @@ footer li {
     .about-p p {
         width: 57%;
         font-size: 1.4rem;
-        line-height: 1.7rem;
     }
 
     .about-p a {
@@ -868,37 +901,28 @@ footer li {
     }
 
     .gallery-p {
-        line-height: 1.9rem;
         font-size: 1.4rem;
-    }
-
-    .image img {
-        min-height: 240px;
-        min-width: 240px;
-        max-height: 240px;
-        max-width: 240px;
     }
 
     .contact-title h1 {
         font-size: 2.65rem;
     }
 
-    form {
-        width:37%;
-        padding: 50px 0;
+    .contact-p {
+        font-size: 1.4rem;
     }
 
-   
+    form {
+        width:37%;
+    }
+    
+    .form {
+        width: 65%;
+    }
 }
 
 @media screen and (max-width:1000px) {
-    /* .button-container .button {
-        margin-right: 15px;
-        margin-left: 15px;
-        padding: 12px 10px;
-    } */
-
-
+    
 }
 
 @media screen and (max-width:900px) {
@@ -910,6 +934,38 @@ footer li {
     .about-p p {
         width: 75%;
     }
+
+    .contact-p {
+        width: 50%;
+    }
+
+    .contact-p p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    
+    .form {
+        width: 68%;
+    }
+
+    label {
+        /* outline: 1px solid green; */
+        font-size: 1.3rem;
+        letter-spacing: .05rem;
+        padding: 6px 0;
+    }
+    
+    input {
+        margin: 3px 0;
+        padding-top: 12px;
+        /* outline: 1px solid orange; */
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 15px;
+    }
+
 }
 
 @media screen and (max-width: 875px) {
@@ -968,6 +1024,57 @@ footer li {
         font-size: 1.4rem;
         width: 40%;
     }
+
+    .gallery-title h1 {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .gallery-p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-title h1 {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-p {
+        width: 100%;
+    }
+
+    .contact-p p {
+        width: 60%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 30px 0 50px 0;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    label {
+        padding: 8px 0;
+    }
+    
+    input {
+        margin: 4px 0;
+        padding-top: 12px;
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 15px;
+    }
+
 }
 
 @media screen and (max-width:650px) {
@@ -998,6 +1105,15 @@ footer li {
         font-size: 1.3rem;
         width: 45%;
     }
+
+    .gallery-title h1 {
+        font-size: 2.3rem;
+    }
+
+    .gallery-p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -1013,8 +1129,8 @@ footer li {
         font-size: 2rem;
     }
 
-    .about-p p {
-        font-size: 1.2rem;
+    .gallery-title h1 {
+        font-size: 2rem;
     }
 }
 
@@ -1053,6 +1169,14 @@ footer li {
         font-size: 1.1rem;
         letter-spacing: 1px;
     }
+
+    .gallery-title h1 {
+        letter-spacing: 1px;
+    }
+    
+    .gallery-p {
+        letter-spacing: 1px;
+    }
 }
 
 
@@ -1073,6 +1197,16 @@ footer li {
     .about-p p {
         font-size: 1rem;
         letter-spacing: 0;
+    }
+
+    .gallery-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+
+    .gallery-p {
+        letter-spacing: 0;
+        font-size: 1rem;
     }
 }
 @media screen and (max-width:360px) {
