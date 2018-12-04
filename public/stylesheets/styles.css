@@ -630,7 +630,7 @@ input[type=submit]:hover {
 ====================== */
 .footer-section {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* justify-content: center; */
     /* align-items: space-between; */
     /* align-content: center; */
@@ -652,22 +652,24 @@ footer {
     padding-top: 10px;
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
-
 .thanks-container {
-    display: flex;
+    /* display: flex; */
     flex-basis: 33.33%;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     /* outline: 1px solid red; */
+    height: 100%;
  }
+
+.footer-links {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    /* flex-wrap: wrap; */
+}
 
  .thanks,
  .learn {
@@ -688,18 +690,19 @@ footer {
      flex-basis: 33.33%;
      justify-content: center;
      align-content: center;
+     height: 100%;
  }
 
  .learn-more p i {
-     padding-left: 5px;
-     color: rgba(255, 255, 255, .4);
+    padding-left: 5px;
+    color: rgba(255, 255, 255, .4);
     transition: color .2s ease-in-out .1s;
  }
 
 
 .footer-li {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-basis: 33.33%;
     /* outline: 1px solid blue; */
     margin: 0 0 10px 0;
@@ -729,6 +732,7 @@ footer li {
  }
 
  footer li a i {
+    display: flex;
     color: rgba(255, 255, 255, .4);
     transition: color .2s ease-in-out .1s;
     font-size: 1.9rem;
@@ -923,63 +927,20 @@ footer li {
 }
 
 @media screen and (max-width:1000px) {
-    .thanks-container {
-        display: flex;
-        flex-basis: 33.33%;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        outline: 1px solid red;
-     }
     
      .thanks,
      .learn {
-        outline: 1px solid green;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        color: rgba(255, 255, 255, .4);
-     }
-    
-     .thanks span {
-        color: rgba(255, 255, 255, .4);
-        transition: color .2s ease-in-out .1s;
-        padding-left: 7px;
-     }
-    
-     .learn-more {
-         display: flex;
-         flex-basis: 33.33%;
-         justify-content: center;
-         align-content: center;
-         outline: 1px solid blue;
-     }
-    
-    
-    
-    .footer-li {
-        outline: 1px solid pink;
-    }
-    
-    footer li {
-        display: flex;
-        flex-direction: row;
-        line-height: 1.4rem;
-        justify-content: space-evenly;
+        /* outline: 1px solid green; */
         font-size: 1.1rem;
-        padding: 15px 0;
-        outline: 1px solid yellow;
      }
     
      footer li a i {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
      }
 
      footer p {
         
-        font-size: 1.2rem;
-        letter-spacing: .09rem;
-        padding-top: 5px;
-        outline: 1px solid lightblue;
+        font-size: 1.1rem;
     }
     
 }
@@ -1024,7 +985,6 @@ footer li {
         width: 55%;
         padding: 5px 15px;
     }
-
 }
 
 @media screen and (max-width: 875px) {
@@ -1134,6 +1094,52 @@ footer li {
         padding: 5px 15px;
     }
 
+    .footer-section {
+        height: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        /* outline: 1px solid red; */
+    }
+
+    .footer-links .thanks-container {
+        order: 1;
+    }
+
+    .footer-links .footer-li {
+        order: 2;
+    }
+    
+    .footer-links .learn-more {
+        order: 1;
+    }
+
+    .thanks-container p, .learn-more p {
+        font-size: 1.2rem;
+    }
+
+
+    footer li {
+        padding: 0;
+    }
+
+    .footer-li {
+        /* outline: 1px solid red; */
+        margin: 8px 0 0 0;
+    }
+
+    .footer-li li a i {
+        font-size: 1.3rem;
+    }
+
+    footer .footer-p {
+        padding-top: 0;
+    }
+
+    .footer-p p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -1330,6 +1336,13 @@ footer li {
         font-size: 1rem;
     }
 
+    .footer-p p {
+        font-size: .9rem;
+    }
+
+    .thanks-container p, .learn-more p {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width:360px) {
     .about-p a {
