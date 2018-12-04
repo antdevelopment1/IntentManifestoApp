@@ -24,8 +24,8 @@ function homePage(content) {
                 </div> -->
                 <nav>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Login</a></li>
                 </nav>
             </header>
@@ -48,7 +48,7 @@ function homePage(content) {
         </div> 
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-title">
             <h1>About Intent Manifesto</h1>
         </div>
@@ -96,7 +96,7 @@ function homePage(content) {
                 <div class="image img4"><img src="/images/journal12.jpg" alt=""></div>
                 <div class="image img4"><img src="/images/journal13.jpg" alt=""></div>
                 <div class="image img5"><img src="/images/journal14.jpg" alt=""></div>
-                <!-- <div class="image img6"><img src="./../public/images/journal3.jpg" alt=""></div>
+                <!-- <div class="image img6"><img src="/images/journal3.jpg" alt=""></div>
                 <div class="image img7"><img src="/images/journal5.jpg" alt=""></div> 
                 <div class="image img7"><img src="/images/journal6.jpg" alt=""></div> 
                 <div class="image img8"><img src="/images/journal4.jpg" alt=""></div>
@@ -105,7 +105,7 @@ function homePage(content) {
             </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-container">
             <div class="contact-title">
                 <h1>Join Our Mailing List</h1>
@@ -114,8 +114,15 @@ function homePage(content) {
                 <hr>
             </div>
         </div>
+        <div class="contact-content">
+            <div class="contact-p">
+                <p>
+                    Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
+                    aroma. body caramelization ristretto irish.
+                </p>
+            </div>
             <div class="contact-form">
-                <form action="/register" method="GET">
+                <form action="/register" method="GET" class="form">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="" required>
                 
@@ -129,6 +136,7 @@ function homePage(content) {
                     <input type="submit" value="Submit" class="submit">
                   </form>
             </div>
+        </div>
             <div class="footer-section">
                 <footer>
                     <div class="footer-links">
