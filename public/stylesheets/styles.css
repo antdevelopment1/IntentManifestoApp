@@ -919,9 +919,68 @@ footer li {
     .form {
         width: 65%;
     }
+
 }
 
 @media screen and (max-width:1000px) {
+    .thanks-container {
+        display: flex;
+        flex-basis: 33.33%;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        outline: 1px solid red;
+     }
+    
+     .thanks,
+     .learn {
+        outline: 1px solid green;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, .4);
+     }
+    
+     .thanks span {
+        color: rgba(255, 255, 255, .4);
+        transition: color .2s ease-in-out .1s;
+        padding-left: 7px;
+     }
+    
+     .learn-more {
+         display: flex;
+         flex-basis: 33.33%;
+         justify-content: center;
+         align-content: center;
+         outline: 1px solid blue;
+     }
+    
+    
+    
+    .footer-li {
+        outline: 1px solid pink;
+    }
+    
+    footer li {
+        display: flex;
+        flex-direction: row;
+        line-height: 1.4rem;
+        justify-content: space-evenly;
+        font-size: 1.1rem;
+        padding: 15px 0;
+        outline: 1px solid yellow;
+     }
+    
+     footer li a i {
+        font-size: 1.9rem;
+     }
+
+     footer p {
+        
+        font-size: 1.2rem;
+        letter-spacing: .09rem;
+        padding-top: 5px;
+        outline: 1px solid lightblue;
+    }
     
 }
 
