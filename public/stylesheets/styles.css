@@ -630,7 +630,7 @@ input[type=submit]:hover {
 ====================== */
 .footer-section {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* justify-content: center; */
     /* align-items: space-between; */
     /* align-content: center; */
@@ -652,22 +652,22 @@ footer {
     padding-top: 10px;
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
-
 .thanks-container {
-    display: flex;
+    /* display: flex; */
     flex-basis: 33.33%;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     /* outline: 1px solid red; */
  }
+
+.footer-links {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
 
  .thanks,
  .learn {
@@ -699,7 +699,7 @@ footer {
 
 .footer-li {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-basis: 33.33%;
     /* outline: 1px solid blue; */
     margin: 0 0 10px 0;
@@ -923,63 +923,20 @@ footer li {
 }
 
 @media screen and (max-width:1000px) {
-    .thanks-container {
-        display: flex;
-        flex-basis: 33.33%;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        outline: 1px solid red;
-     }
     
      .thanks,
      .learn {
-        outline: 1px solid green;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        color: rgba(255, 255, 255, .4);
-     }
-    
-     .thanks span {
-        color: rgba(255, 255, 255, .4);
-        transition: color .2s ease-in-out .1s;
-        padding-left: 7px;
-     }
-    
-     .learn-more {
-         display: flex;
-         flex-basis: 33.33%;
-         justify-content: center;
-         align-content: center;
-         outline: 1px solid blue;
-     }
-    
-    
-    
-    .footer-li {
-        outline: 1px solid pink;
-    }
-    
-    footer li {
-        display: flex;
-        flex-direction: row;
-        line-height: 1.4rem;
-        justify-content: space-evenly;
+        /* outline: 1px solid green; */
         font-size: 1.1rem;
-        padding: 15px 0;
-        outline: 1px solid yellow;
      }
     
      footer li a i {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
      }
 
      footer p {
         
-        font-size: 1.2rem;
-        letter-spacing: .09rem;
-        padding-top: 5px;
-        outline: 1px solid lightblue;
+        font-size: 1.1rem;
     }
     
 }
@@ -1024,7 +981,6 @@ footer li {
         width: 55%;
         padding: 5px 15px;
     }
-
 }
 
 @media screen and (max-width: 875px) {
@@ -1133,6 +1089,11 @@ footer li {
         width: 55%;
         padding: 5px 15px;
     }
+
+
+
+
+
 
 }
 
