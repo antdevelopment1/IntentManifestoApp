@@ -118,8 +118,7 @@ function homePage(content) {
             <div class="contact-p">
                 <p>
                     Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
-                    aroma. body caramelization ristretto irish. Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
-                    aroma. body caramelization ristretto irish. Grounds acerbic con panna frappuccino et french press breve beans kopi-lu.
+                    aroma. body caramelization ristretto irish. Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. 
                 </p>
             </div>
             <div class="contact-form">
