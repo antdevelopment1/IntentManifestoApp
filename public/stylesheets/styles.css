@@ -341,7 +341,7 @@ header {
 }
 
 .about-p p {
-    width: 55%;
+    width: 65%;
     text-align: justify;
     text-indent: 25px;
     padding: 15px 0 15px 0;
@@ -533,15 +533,15 @@ header {
 }
 
 .contact-p p {
-    width: 70%;
+    width: 85%;
     height: 100%;
     margin: 0 auto;
     text-align: justify;
     align-content: center;
     justify-content: center;
     text-indent: 25px;
-    padding: 15px 0 15px 0;
-    line-height: 2rem;
+    padding: 0 0 15px 0;
+    line-height: 2.7rem;
     letter-spacing: .05rem;
     font-size: 1.6rem;
     font-family: 'Cormorant Garamond', serif;
@@ -574,7 +574,9 @@ form {
 }
 
 .form {
-    width:80%;
+    width:50%;
+    margin-bottom: 20px;
+    padding: 50px 0;
 }
 
 label {
@@ -773,6 +775,17 @@ footer li {
     .nav-container nav li {
         padding: 13px 30px;
     }
+
+    .about-p a {
+        width: 20%;
+    }
+
+    .image img {
+        min-height: 260px;
+        min-width: 260px;
+        max-height: 260px;
+        max-width: 260px;
+    }
 }
 
 @media screen and (max-width:1300px) {
@@ -814,12 +827,8 @@ footer li {
         line-height: 1.7rem;
         font-size: 1.4rem;
     }
-
-    .image img {
-        min-height: 240px;
-        min-width: 240px;
-        max-height: 240px;
-        max-width: 240px;
+    .gallery-container {
+        width: 65%;
     }
 
     .contact-title h1 {
@@ -908,6 +917,18 @@ footer li {
         font-size: 1.4rem;
     }
 
+    .gallery-container {
+        width: 63%;
+        /* border: 6px solid #4f4444; */
+    }
+    
+    .image img {
+        min-height: 250px;
+        min-width: 250px;
+        max-height: 250px;
+        max-width: 250px;
+    }
+
     .contact-title h1 {
         font-size: 2.65rem;
     }
@@ -927,7 +948,20 @@ footer li {
 }
 
 @media screen and (max-width:1000px) {
+    .gallery-container {
+       
+        height: 70%;
+        width: 63%;
+        margin: 40px auto 100px auto;
+        /* border: 6px solid #4f4444; */
+    }
     
+    .image img {
+        min-height: 210px;
+        min-width: 210px;
+        max-height: 210px;
+        max-width: 210px;
+    }
      .thanks,
      .learn {
         /* outline: 1px solid green; */
@@ -996,6 +1030,18 @@ footer li {
     .about-p a {
         width: 25%;
     }
+
+    .gallery-container {
+        width: 70%;
+    }
+
+    .image img {
+        min-height: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -1054,6 +1100,17 @@ footer li {
         font-size: 1.2rem;
     }
 
+    .gallery-container {
+        width: 80%;
+    }
+    
+    .image img {
+        min-height: 180px;
+        min-width: 180px;
+        max-height: 180px;
+        max-width: 180px;
+    }
+    
     .contact-title h1 {
         font-size: 2.3rem;
         letter-spacing: 2px;
@@ -1104,15 +1161,22 @@ footer li {
     }
 
     .footer-links .thanks-container {
+        /* outline: 1px solid red; */
         order: 1;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     .footer-links .footer-li {
+        padding-bottom: 5px;
+        padding-top: 5px;
         order: 2;
     }
     
     .footer-links .learn-more {
         order: 1;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     .thanks-container p, .learn-more p {
@@ -1121,11 +1185,11 @@ footer li {
 
 
     footer li {
+        /* outline: 1px solid red; */
         padding: 0;
     }
 
     .footer-li {
-        /* outline: 1px solid red; */
         margin: 8px 0 0 0;
     }
 
@@ -1138,6 +1202,8 @@ footer li {
     }
 
     .footer-p p {
+        padding-top: 15px;
+        padding-bottom: 20px;
         font-size: 1rem;
     }
 }
@@ -1231,6 +1297,19 @@ footer li {
         font-size: 2rem;
     }
 
+    .gallery-container {
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .image img {
+        min-height: 280px;
+        min-width: 280px;
+        max-height: 280px;
+        max-width: 280px;
+        width: 100%;
+    }
+
     .contact-title h1 {
         font-size: 2rem;
     }
@@ -1279,6 +1358,18 @@ footer li {
     .gallery-p {
         letter-spacing: 1px;
     }
+    .gallery-container {
+        width: 55%;
+    }
+    .image img {
+        min-height: 270px;
+        min-width: 270px;
+        max-height: 270px;
+        max-width: 270px;
+        /* height: 100%; */
+        width: 100%;
+        /* margin: 0 auto 30px auto; */
+    }
 
     .contact-title h1 {
         letter-spacing: 1px;
@@ -1293,6 +1384,14 @@ footer li {
     }
 }
 
+@media screen and (max-width:450px) {
+    .gallery-container {
+        width: 63%;
+    }
+    .gallery-p p {
+        font-size: 1.1rem;
+    }
+}
 
 @media screen and (max-width:400px) {
     .hero-message p {
