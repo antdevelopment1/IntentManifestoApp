@@ -150,16 +150,14 @@ header {
     letter-spacing: 5px;
 }
 
-.hero-title .hero-hr{
+.hero-hr {
     display: flex;
+    flex-direction: center;
     justify-content: center;
     align-content: center;
-    height: 20px;
-}
-
-.hero-hr hr{
-    width: 8%;
-    background-image: linear-gradient(to right, whitesmoke, white, whitesmoke);
+    align-self: center;
+    width: 13%;
+    background-image: linear-gradient(to right, rgb(243, 239, 239), white, rgb(243, 239, 239));
 }
 
 .hero-message {
@@ -181,7 +179,7 @@ header {
     font-style: italic;
     font-weight: 300;
     /* outline: 1px solid red; */
-    height: 35px;;
+    height: 35px;
 }
 
 .button-container {
@@ -276,6 +274,7 @@ header {
     font-size: 3rem;
     text-align: center;
     color: #807c71;
+    letter-spacing: 3px;
 }
 
 .about-hr {
@@ -403,6 +402,7 @@ header {
 .gallery-title h1 {
     margin: 15px;
     font-size: 3rem; 
+    letter-spacing: 3px;
 }
 
 .hrgallery {
@@ -422,6 +422,7 @@ header {
     align-content: center;
     line-height: 2.3rem;
     font-size: 1.6rem;
+    letter-spacing: .05rem;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     padding: 10px;
@@ -461,6 +462,7 @@ header {
     transform: scale(1.15);
     transition: transform .5s, opacity .5s;
 }
+
 .image img:hover {
     opacity:1;
     transform: scale(1.03);
@@ -499,6 +501,7 @@ header {
 .contact-title h1 {
     color:  rgba(45, 47, 51, .9);
     font-size: 3rem;
+    letter-spacing: 3px;
 }
 
 .hrcontact {
@@ -512,33 +515,70 @@ header {
     background-image: linear-gradient(to right, whitesmoke,  rgba(45, 47, 51, .9), whitesmoke);
 }
 
-.contact-form {
+.contact-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    /* flex-direction: row; */
     width: 100%;
     height: 100%;
-    padding: 60px 0 30px 0;
+    align-content: center;
+    /* outline: 1px solid red; */
+}
+
+.contact-p {
+    width: 50%;
+    height: 100%;
+    margin: auto 0;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-p p {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    align-content: center;
+    justify-content: center;
+    text-indent: 25px;
+    padding: 15px 0 15px 0;
+    line-height: 2rem;
+    letter-spacing: .05rem;
+    font-size: 1.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    /* outline: 1px solid green; */
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 10px 0 20px 0;
     /* outline: 2px solid blue; */
 }
 
 form {
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     align-self: center;
     height: 100%;
-    padding: 100px 0;
-    margin: 0 0 30px 0;
-    width: 30%;
+    /* padding: 100px 0; */
+    /* margin: 0 0 30px 0; */
+    width: 100%;
     border: 3px solid rgba(45, 47, 51, .6);
     box-shadow: 3px 3px 5px rgba(45, 47, 51, .5);
     /* outline: 1px solid red; */
 }
 
+.form {
+    width:80%;
+}
+
 label {
+    /* outline: 1px solid green; */
     font-size: 1.5rem;
     letter-spacing: .05rem;
     padding: 10px 0;
@@ -548,11 +588,11 @@ label {
 input {
     margin: 15px 0;
     padding-top: 25px;
-    /* outline: 1px solid red; */
+    /* outline: 1px solid orange; */
 }
 
 input[type=text], input[type=email] {
-    width: 45%;
+    width: 50%;
     padding: 10px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -563,7 +603,7 @@ input[type=text], input[type=email] {
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 70%;
     background-color: rgba(45, 47, 51, .9);
     color: white;
     padding: 13px 20px;
@@ -590,7 +630,7 @@ input[type=submit]:hover {
 ====================== */
 .footer-section {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* justify-content: center; */
     /* align-items: space-between; */
     /* align-content: center; */
@@ -612,22 +652,24 @@ footer {
     padding-top: 10px;
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
-
 .thanks-container {
-    display: flex;
+    /* display: flex; */
     flex-basis: 33.33%;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     /* outline: 1px solid red; */
+    height: 100%;
  }
+
+.footer-links {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    /* flex-wrap: wrap; */
+}
 
  .thanks,
  .learn {
@@ -648,18 +690,19 @@ footer {
      flex-basis: 33.33%;
      justify-content: center;
      align-content: center;
+     height: 100%;
  }
 
  .learn-more p i {
-     padding-left: 5px;
-     color: rgba(255, 255, 255, .4);
+    padding-left: 5px;
+    color: rgba(255, 255, 255, .4);
     transition: color .2s ease-in-out .1s;
  }
 
 
 .footer-li {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-basis: 33.33%;
     /* outline: 1px solid blue; */
     margin: 0 0 10px 0;
@@ -689,6 +732,7 @@ footer li {
  }
 
  footer li a i {
+    display: flex;
     color: rgba(255, 255, 255, .4);
     transition: color .2s ease-in-out .1s;
     font-size: 1.9rem;
@@ -732,41 +776,579 @@ footer li {
 }
 
 @media screen and (max-width:1300px) {
+    header {
+        margin-bottom:35px;
+    }
+
+    .hero-title {
+        margin-top: 0;
+    }
+
     .nav-container nav li {
         padding: 13px 25px;
     }
+
+    .button-container {
+        margin-bottom: 150px;
+    }
+
+    .about-title h1{
+        font-size: 2.65rem;
+    }
+
+    .about-p {
+        width: 100%;
+    }
+
+    .about-p p {
+        width: 57%;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.65rem;
+    }
+
+    .gallery-p {
+        line-height: 1.7rem;
+        font-size: 1.4rem;
+    }
+
+    .image img {
+        min-height: 240px;
+        min-width: 240px;
+        max-height: 240px;
+        max-width: 240px;
+    }
+
+    .contact-title h1 {
+        font-size: 2.65rem;
+    }
+
+    form {
+        width:37%;
+        padding: 50px 0;
+    }  
+
+
+    .form {
+        width:60%;
+    }
     
+    label {
+        /* outline: 1px solid green; */
+        font-size: 1.4rem;
+        letter-spacing: .05rem;
+        padding: 6px 0;
+    }
+    
+    input {
+        margin: 3px 0;
+        padding-top: 15px;
+        /* outline: 1px solid orange; */
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 20px;
+    }
 }
 
 @media screen and (max-width:1100px) {
+    header {
+        margin-bottom:25px;
+    }
+
+    .nav-container nav li {
+        padding: 13px 20px;
+    }
+
+    .hero-title {
+        height: 150px;
+    }
+
+    .hero-title h1 {
+        font-size: 2.4rem; 
+    }
+
+    .hero-message p {
+        font-size: 1.4em;
+    }
+
+    .button-container .button {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        padding: 12px 0;
+    }
+
+    .about-title h1{
+        font-size: 2.65rem;
+    }
+
+    .about-p {
+        width: 100%;
+    }
+
+    .about-p p {
+        width: 57%;
+        font-size: 1.4rem;
+    }
+
+    .about-p a {
+        font-size: 1.5rem;
+        width: 20%;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.65rem;
+    }
+
+    .gallery-p {
+        font-size: 1.4rem;
+    }
+
+    .contact-title h1 {
+        font-size: 2.65rem;
+    }
+
+    .contact-p {
+        font-size: 1.4rem;
+    }
+
+    form {
+        width:37%;
+    }
     
+    .form {
+        width: 65%;
+    }
+
 }
 
 @media screen and (max-width:1000px) {
+    
+     .thanks,
+     .learn {
+        /* outline: 1px solid green; */
+        font-size: 1.1rem;
+     }
+    
+     footer li a i {
+        font-size: 1.6rem;
+     }
+
+     footer p {
+        
+        font-size: 1.1rem;
+    }
     
 }
 
 @media screen and (max-width:900px) {
     
+    .nav-container nav li {
+        padding: 13px 15px;
+    }
+
+    .about-p p {
+        width: 75%;
+    }
+
+    .contact-p {
+        width: 50%;
+    }
+
+    .contact-p p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    
+    .form {
+        width: 68%;
+    }
+
+    label {
+        /* outline: 1px solid green; */
+        font-size: 1.3rem;
+        letter-spacing: .05rem;
+        padding: 6px 0;
+    }
+    
+    input {
+        margin: 3px 0;
+        padding-top: 12px;
+        /* outline: 1px solid orange; */
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+
+    .nav-container nav li {
+        padding: 13px 10px;
+    }
+
+    .about-p a {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:768px) {
+
+    header {
+        padding: 35px 15px 35px 0;
+    }
+
+    .nav-container nav li {
+        padding: 13px 4px;
+    }
+
+    .hero-title h1 {
+        font-size: 2.3rem; 
+        letter-spacing: 3px;
+    }
+
+    .hero-hr {
+        width: 18%;
+    }
+
+    .hero-message p {
+        font-size: 1.3em;
+    }
+
+    .button-container {
+        margin: 5px auto;
+    }
+
+    .button-container .button{
+        width: 25%;
+    }
+
+    .about-title h1{
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .about-p p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .about-p a {
+        font-size: 1.4rem;
+        width: 40%;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .gallery-p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-title h1 {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-p {
+        width: 100%;
+    }
+
+    .contact-p p {
+        width: 60%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 30px 0 50px 0;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    label {
+        padding: 8px 0;
+    }
     
+    input {
+        margin: 4px 0;
+        padding-top: 12px;
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+        padding: 5px 15px;
+    }
+
+    .footer-section {
+        height: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        /* outline: 1px solid red; */
+    }
+
+    .footer-links .thanks-container {
+        order: 1;
+    }
+
+    .footer-links .footer-li {
+        order: 2;
+    }
+    
+    .footer-links .learn-more {
+        order: 1;
+    }
+
+    .thanks-container p, .learn-more p {
+        font-size: 1.2rem;
+    }
+
+
+    footer li {
+        padding: 0;
+    }
+
+    .footer-li {
+        /* outline: 1px solid red; */
+        margin: 8px 0 0 0;
+    }
+
+    .footer-li li a i {
+        font-size: 1.3rem;
+    }
+
+    footer .footer-p {
+        padding-top: 0;
+    }
+
+    .footer-p p {
+        font-size: 1rem;
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
+    .nav-container nav{
+        justify-content: space-around;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container .button{
+        width: 65%;
+        margin: 10px 0;
+    }
+
+    .about-title h1{
+        font-size: 2.2rem;
+    }
+
+    .about-p p {
+        width: 75%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .about-p a {
+        font-size: 1.3rem;
+        width: 45%;
+    }
+
+    .gallery-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .gallery-p {
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .contact-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-p p {
+        width: 70%;
+        letter-spacing: 0.06rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
     
+    input {
+        margin: 4px 0;
+        padding-top: 12px;
+    }
+    
+    input[type=text], input[type=email] {
+        width: 55%;
+    }
+    input[type=submit] {
+        font-size: 1.1rem;
+    }
 }
 
-@media screen and (max-width:525px) {
-    
+@media screen and (max-width:575px) {
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero-message p {
+        font-size: 1.2rem;
+    }
+
+    .about-title h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-title h1 {
+        font-size: 2rem;
+    }
+
+    .contact-title h1 {
+        font-size: 2rem;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .nav-container nav li {
+        letter-spacing: 1px;
+        /* font-family: 'Cormorant Garamond', serif; */
+        font-size: 1.1rem;
+    }
+
+    .hero-hr {
+        width: 30%;
+    }
+
+    .hero-message p {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        height: 20px;
+    }
+    .button-container {
+        margin-bottom: 32px;
+        /* outline: 1px solid red; */
+    }
+
+    .button-container .button {
+        font-size: 1.2rem;
+        width: 65%;
+        margin: 6px 0;
+    }
+
+    .about-title h1 {
+        letter-spacing: 1px;
+    }
+
+    .about-p p {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .gallery-title h1 {
+        letter-spacing: 1px;
+    }
+    
+    .gallery-p {
+        letter-spacing: 1px;
+    }
+
+    .contact-title h1 {
+        letter-spacing: 1px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form {
+        width: 75%;
+    }
+}
+
 
 @media screen and (max-width:400px) {
-    
+    .hero-message p {
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    .about-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+    .about-p {
+        width: 85;
+    }
+
+    .about-p p {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    .gallery-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+
+    .gallery-p {
+        letter-spacing: 0;
+        font-size: 1rem;
+    }
+
+    .contact-title h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+
+    .contact-p p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .footer-p p {
+        font-size: .9rem;
+    }
+
+    .thanks-container p, .learn-more p {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width:360px) {
-    
+    .about-p a {
+        font-size:1.1rem;
+        width: 60%;
+    }
 }
 @media screen and (max-width:320px) {
     
