@@ -1388,6 +1388,9 @@ footer li {
     .gallery-container {
         width: 63%;
     }
+    .gallery-p p {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width:400px) {
