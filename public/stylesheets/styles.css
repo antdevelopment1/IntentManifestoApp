@@ -333,7 +333,7 @@ header {
 }
 
 .about-p p {
-    width: 60%;
+    width: 70%;
     text-align: justify;
     text-indent: 25px;
     padding: 15px 0 15px 0;
@@ -808,9 +808,9 @@ footer li {
     }
 
     .about-p p {
-        width: 57%;
-        font-size: 1.4rem;
-        line-height: 1.7rem;
+        width: 65%;
+        line-height: 2.1rem;
+        font-size: 1.5rem;
     }
 
     .gallery-title h1 {
@@ -899,7 +899,7 @@ footer li {
     }
 
     .about-p p {
-        width: 57%;
+        width: 65%;
         font-size: 1.4rem;
     }
 
