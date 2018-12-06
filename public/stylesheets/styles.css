@@ -159,7 +159,7 @@ header {
     color: rgba(255, 255, 255, .8);
     height: 180px;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 200px;
     /* outline: 2px solid blueviolet; */
 }
 .hero-title h1{
@@ -356,6 +356,8 @@ header {
     background-color: transparent;
     font-style: italic;
     width: 15%;
+    margin-bottom: 140px;
+    /* outline: 1px solid green; */
 }
 
 .about-p a:hover {
@@ -492,7 +494,7 @@ header {
 
 .contact-title h1 {
     color:  rgba(45, 47, 51, .9);
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 3px;
     margin-top: 90px;
     margin-bottom: 50px;
@@ -521,9 +523,10 @@ header {
 .contact-p {
     width: 50%;
     height: 100%;
-    margin: auto 0;
-    align-content: center;
-    justify-content: center;
+    margin: 100px 0;
+    align-content: flex-start;
+    justify-content: flex-start;
+    /* outline: 1px solid red; */
 }
 
 .contact-p p {
@@ -780,6 +783,16 @@ footer li {
         max-height: 260px;
         max-width: 260px;
     }
+
+    form {
+        width:37%;
+        padding: 50px 0;
+    }  
+
+
+    .form {
+        width:60%;
+    }
 }
 
 @media screen and (max-width:1300px) {
@@ -835,26 +848,14 @@ footer li {
     }
 
     form {
-        width:37%;
+        width:55%;
         padding: 50px 0;
     }  
-
-
-    .form {
-        width:60%;
-    }
     
     label {
         /* outline: 1px solid green; */
         font-size: 1.4rem;
         letter-spacing: .05rem;
-        padding: 6px 0;
-    }
-    
-    input {
-        margin: 3px 0;
-        padding-top: 15px;
-        /* outline: 1px solid orange; */
     }
     
     input[type=text], input[type=email] {
@@ -933,15 +934,21 @@ footer li {
     }
 
     .contact-p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-top: 50px;
     }
 
-    form {
-        width:37%;
+    .contact-p p {
+        line-height: 2.3rem;
     }
+
     
     .form {
-        width: 65%;
+        width: 70%;
+    }
+    
+    input {
+        margin: 10px 0;
     }
 
 }
@@ -961,6 +968,16 @@ footer li {
         max-height: 210px;
         max-width: 210px;
     }
+
+    .contact-p {
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+
+    .contact-p p {
+        line-height: 2.5rem;
+    }
+
      .thanks,
      .learn {
         /* outline: 1px solid green; */
@@ -993,12 +1010,12 @@ footer li {
     }
 
     .contact-p p {
-        width: 80%;
+        width: 90%;
         font-size: 1.3rem;
     }
     
     .form {
-        width: 68%;
+        width: 75%;
     }
 
     label {
@@ -1129,25 +1146,26 @@ footer li {
 
     .contact-form {
         width: 100%;
-        padding: 30px 0 50px 0;
+        /* padding: 30px 0 50px 0; */
     }
 
     .form {
         width: 50%;
+        adding: 30px 0 50px 0;
     }
 
     label {
         padding: 8px 0;
     }
     
-    input {
+    /* input {
         margin: 4px 0;
         padding-top: 12px;
-    }
+    } */
     
     input[type=text], input[type=email] {
         width: 55%;
-        padding: 5px 15px;
+        /* padding: 5px 15px; */
     }
 
     .footer-section {
