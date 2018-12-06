@@ -16,14 +16,14 @@ function homePage(content) {
     </head>
     <body>
 
-    <section class="hero-section">
+    <section class="hero-section" id="home">
         <div class="nav-container">
             <header>
                 <!-- <div class="header-h2">
                 <h2><a href="#">Intent Manifesto</a></h2>
                 </div> -->
                 <nav>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Login</a></li>
@@ -47,8 +47,8 @@ function homePage(content) {
             </div>
         </div> 
     </section>
-
-    <section class="about-section" id="about">
+    <p id="about">!</p>
+    <section class="about-section js--section-home">
         <div class="about-title">
             <h1>About Intent Manifesto</h1>
         </div>
@@ -60,17 +60,15 @@ function homePage(content) {
                 <!-- <img src="../public/images/journal20.jpg" alt=""> -->
             </div>
             <div class="about-p">
-                <p>
-                    Et spoon rich, siphon, strong grounds, single shot a redeye bar shop. Redeye whipped, americano that, decaffeinated robust latte to go rich. 
-                    Java aroma milk turkish extra dark galão. Id as, at, mazagran robusta frappuccino grinder cream blue mountain white french press variety. 
-                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam frappuccino grinder cream blue mountain white french press variety. 
-                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam. 
-                </p>
-                <p>Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
-                    aroma. Strong as french press mazagran, grinder, carajillo cappuccino mazagran macchiato mazagran. Espresso french press saucer, sweet organic that a 
-                    café au lait body caramelization ristretto irish. Aroma at, roast so beans skinny groundsfrappuccino grinder cream blue mountain white french press variety. 
-                    Frappuccino single shot, flavour spoon turkish dripper pumpkin spice foam.
-                </p>
+            <p>Intent Manifesto is an app that focuses on helping users actualize their goals and dreams into reality. 
+                By treating their thoughts as more than just a task to be crossed off a list, the user can now store all those amazing ideas in a place that is just for them. Intent Manifesto is a personal collection of a user's most intimate thoughts and ideas. Though it can be used for any purpose the user deems fit, the app was created with goal-oriented 
+                people in mind.
+            </p>
+
+            <p>This fullstack application was built by April Copes and Lauren Wilkerson with the intention of creating a space 
+                for others that influence those to go after their goals and dreams. The technologies used to build this app were HTML, CSS, 
+                JavaScript, Node.js/Express, JQuery, and SQL. Intent Manifesto is currently viewable on GitHub and feedback and contributions are welcomed and encouraged.
+            </p>
                 <a href="#" class="about-button">Join Now</a>
             </div>
         </div>
@@ -145,9 +143,9 @@ function homePage(content) {
                         </div>
                         <div class="footer-li">
                             <li><a href="https://github.com/antdevelopment1" title="April-Github"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://github.com/antdevelopment1" title="April-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/laurenayn" title="Lauren-Github"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://github.com/laurenalyn" title="Lauren-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/april-copes/" title="April-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/laurenalyn" title="Lauren-Github"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/laurenalyn/" title="Lauren-LinkedIn"><i class="fab fa-linkedin"></i></a></li>
                         </div>
                         <div class="learn-more">
                             <p class="learn">Built With <i class="fas fa-heart"></i>, <i class="fas fa-coffee"></i>, & <i class="fas fa-grin-tears"></i></p>
@@ -162,7 +160,6 @@ function homePage(content) {
                 </footer>
             </div>
     </section>
-
     </body>
     </html>      
     `;
