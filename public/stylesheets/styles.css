@@ -133,7 +133,7 @@ header {
     min-height: 100%;
     justify-content: center;
     /* outline: 2px solid blue; */
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 .hero-title-content {
@@ -156,7 +156,7 @@ header {
     color: rgba(255, 255, 255, .8);
     height: 180px;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 180px;
     /* outline: 2px solid blueviolet; */
 }
 .hero-title h1{
@@ -389,8 +389,8 @@ header {
 }
 
 .gallery-title h1 {
-    margin: 15px;
-    font-size: 3rem; 
+    margin: 50px 15px 15px 15px;
+    font-size: 2.9rem; 
     letter-spacing: 3px;
 }
 

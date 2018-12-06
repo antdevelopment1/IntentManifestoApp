@@ -1,13 +1,13 @@
 window.onscroll = function() {stickyFunction()};
 
-var header = document.getElementById("nav-container");
+var section = document.getElementById("nav-container");
 
-var sticky = header.offsetHeight;
+var sticky = section.offsetTop;
 
 function stickyFunction() {
     if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+        section.classList.add("sticky");
     } else {
-        header.classList.remove("sticky");
+        section.classList.remove("sticky");
     }
 }
