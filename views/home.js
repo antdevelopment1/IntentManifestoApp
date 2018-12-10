@@ -17,16 +17,17 @@ function homePage(content) {
     <body>
 
     <section class="hero-section" id="home">
-        <div class="nav-container">
+        <div class="nav-container" id="nav-container">
             <header>
                 <!-- <div class="header-h2">
                 <h2><a href="#">Intent Manifesto</a></h2>
                 </div> -->
-                <nav>
+                <nav class="nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                 </nav>
             </header>
         </div>
@@ -42,15 +43,16 @@ function homePage(content) {
                 <p>and script your dreams into reality.</p>
             </div>
             <div class="button-container">
-                <a href="#" class="button button1">Sign Up</a>
-                <a href="#" class="button button2">Learn More</a>
+                <a href="/register" class="button button1">Sign Up</a>
+                <a href="/register" class="button button2">Learn More</a>
             </div>
         </div> 
+        <!-- <p id="about"></p> -->
     </section>
-    <p id="about">!</p>
-    <section class="about-section js--section-home">
+    <section class="about-section" id="about">
         <div class="about-title">
             <h1>About Intent Manifesto</h1>
+            <!-- <p id="about">!</p> -->
         </div>
         <div class="about-hr">
             <hr>
@@ -67,14 +69,14 @@ function homePage(content) {
 
             <p>This fullstack application was built by April Copes and Lauren Wilkerson with the intention of creating a space 
                 for others that influence those to go after their goals and dreams. The technologies used to build this app were HTML, CSS, 
-                JavaScript, Node.js/Express, JQuery, and SQL. Intent Manifesto is currently viewable on GitHub and feedback and contributions are welcomed and encouraged.
+                JavaScript, Node.js, Express, and SQL. Intent Manifesto is currently viewable on GitHub and feedback and contributions are welcomed and encouraged.
             </p>
                 <a href="#" class="about-button">Join Now</a>
             </div>
         </div>
     </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="inspiration">
             <div class="gallery-title">
                 <h1>Inspiration Gallery</h1>
             </div>
@@ -94,12 +96,6 @@ function homePage(content) {
                 <div class="image img4"><img src="/images/journal12.jpg" alt=""></div>
                 <div class="image img4"><img src="/images/journal13.jpg" alt=""></div>
                 <div class="image img5"><img src="/images/journal14.jpg" alt=""></div>
-                <!-- <div class="image img6"><img src="/images/journal3.jpg" alt=""></div>
-                <div class="image img7"><img src="/images/journal5.jpg" alt=""></div> 
-                <div class="image img7"><img src="/images/journal6.jpg" alt=""></div> 
-                <div class="image img8"><img src="/images/journal4.jpg" alt=""></div>
-                <div class="image img9"><img src="/images/journal17.jpg" alt=""></div>
-                <div class="image img9"><img src="/images/journal19.jpg" alt=""></div> -->
             </div>
     </section>
 
@@ -115,8 +111,8 @@ function homePage(content) {
         <div class="contact-content">
             <div class="contact-p">
                 <p>
-                    Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. Mocha robust, steamed coffee americano bar crema crema 
-                    aroma. body caramelization ristretto irish. Grounds acerbic con panna frappuccino et french press breve beans kopi-luwak decaffeinated. 
+                    If you would like to become a member of the Intent Manifesto community or have an questions on where to get started, feel free to drop us a line.
+                    The jounery to your new reality begins with you. Get started now and find out more.
                 </p>
             </div>
             <div class="contact-form">
@@ -160,8 +156,9 @@ function homePage(content) {
                 </footer>
             </div>
     </section>
+    <script src="/scripts/slider.js"></script>
     </body>
-    </html>      
+    </html>          
     `;
 }
 
