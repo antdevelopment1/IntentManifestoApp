@@ -129,7 +129,7 @@ li {
     /* outline: 1px solid yellow; */
     height: 100%;
     width: 100%;
-    margin: 2rem 0;
+    margin: 3rem 0;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -221,6 +221,11 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    /* background-image: url(./../images/splatter2.png);
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* background-size: 55%;  */
 }
 
 .about-p p {
@@ -276,12 +281,63 @@ li {
     height: 100%;
     width: 50%;
     justify-content: flex-end;
-}
-
-.footer-section .links {
     font-size: 1.5rem;
+    /* outline: 1px solid red; */
 }
 
 .footer-section .links li {
     padding:1rem;
+}
+
+/* LOGIN PAGE */
+
+.landing-section-login {
+    /* background-color: turquoise; */
+}
+
+.login-nav li a{
+    color: #000;
+}
+
+.login-form-container{
+    /* background-color: black; */
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.label {
+    /* outline: 1px solid red; */
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.input-field {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.submit {
+    display: flex;
+    width: 30%;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.help {
+    margin-bottom: 5rem;
+}
+
+.help a {
+    color: #000;
+    padding: 1rem;
 }
