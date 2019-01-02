@@ -1,4 +1,4 @@
-# IntentManifestoApp
+# IntentManifestoApp - Coming Soon
 ## Intent Manifesto App - Design Build In Progress
 - Not yet sized for all screens - Responsive Design Coming Soon
 
